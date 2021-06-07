@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="82c4d05d2e734835b445fc601c26e465" Name="Diagram1" ZoomLevel="71" >
+        <EntityTypeShape EntityType="ModeloDatos.Persona" Width="1.5" PointX="5.25" PointY="0.75" />
+        <EntityTypeShape EntityType="ModeloDatos.Empleado" Width="1.5" PointX="5.25" PointY="4.25" />
+        <InheritanceConnector EntityType="ModeloDatos.Empleado" />
+        <EntityTypeShape EntityType="ModeloDatos.Usuario" Width="1.5" PointX="5.875" PointY="18.25" FillColor="255, 224, 192" />
+        <AssociationConnector Association="ModeloDatos.EmpleadoUsuario" />
+        <EntityTypeShape EntityType="ModeloDatos.Empresa" Width="1.5" PointX="5.25" PointY="7.5" FillColor="Red" />
+        <EntityTypeShape EntityType="ModeloDatos.CondicionIva" Width="1.5" PointX="3" PointY="19.625" FillColor="255, 128, 128" />
+        <AssociationConnector Association="ModeloDatos.CondicionIvaEmpresa" />
+        <AssociationConnector Association="ModeloDatos.EmpleadoEmpresa" />
+        <EntityTypeShape EntityType="ModeloDatos.Sala" Width="1.5" PointX="26.375" PointY="1.25" FillColor="Fuchsia" />
+        <AssociationConnector Association="ModeloDatos.EmpresaSala" />
+        <EntityTypeShape EntityType="ModeloDatos.Mesa" Width="1.5" PointX="28.625" PointY="1.25" FillColor="Fuchsia" />
+        <AssociationConnector Association="ModeloDatos.SalaMesa" />
+        <EntityTypeShape EntityType="ModeloDatos.Perfil" Width="1.5" PointX="8" PointY="18.375" FillColor="255, 224, 192" />
+        <EntityTypeShape EntityType="ModeloDatos.Formulario" Width="1.5" PointX="28.625" PointY="14.75" FillColor="255, 224, 192" />
+        <AssociationConnector Association="ModeloDatos.UsuarioPerfil" />
+        <AssociationConnector Association="ModeloDatos.PerfilFormulario" />
+        <AssociationConnector Association="ModeloDatos.EmpresaPerfil" />
+        <EntityTypeShape EntityType="ModeloDatos.Comprobante" Width="1.75" PointX="23.875" PointY="14" FillColor="Yellow" />
+        <EntityTypeShape EntityType="ModeloDatos.Salon" Width="2" PointX="24" PointY="22.875" FillColor="Yellow" />
+        <InheritanceConnector EntityType="ModeloDatos.Salon" />
+        <EntityTypeShape EntityType="ModeloDatos.Delivery" Width="2" PointX="20" PointY="20.5" FillColor="Yellow" />
+        <InheritanceConnector EntityType="ModeloDatos.Delivery" />
+        <EntityTypeShape EntityType="ModeloDatos.Factura" Width="2.5" PointX="22.625" PointY="20.25" FillColor="128, 128, 255" />
+        <InheritanceConnector EntityType="ModeloDatos.Factura" />
+        <AssociationConnector Association="ModeloDatos.EmpresaComprobante" />
+        <AssociationConnector Association="ModeloDatos.UsuarioComprobante" />
+        <EntityTypeShape EntityType="ModeloDatos.Cliente" Width="2" PointX="2" PointY="8.5" />
+        <InheritanceConnector EntityType="ModeloDatos.Cliente" />
+        <AssociationConnector Association="ModeloDatos.ClienteComprobante" />
+        <AssociationConnector Association="ModeloDatos.EmpleadoComprobante_Salon" />
+        <AssociationConnector Association="ModeloDatos.MesaComprobante_Salon" />
+        <EntityTypeShape EntityType="ModeloDatos.DetalleComprobante" Width="1.875" PointX="8.5" PointY="21.375" FillColor="128, 128, 255" />
+        <AssociationConnector Association="ModeloDatos.ComprobanteDetalleComprobante" />
+        <EntityTypeShape EntityType="ModeloDatos.Articulo" Width="2.25" PointX="30.875" PointY="4.125" FillColor="255, 128, 0" />
+        <AssociationConnector Association="ModeloDatos.ArticuloDetalleComprobante" />
+        <AssociationConnector Association="ModeloDatos.EmpleadoDelivery" />
+        <EntityTypeShape EntityType="ModeloDatos.Caja" Width="1.875" PointX="7.625" PointY="13.375" FillColor="128, 128, 255" />
+        <AssociationConnector Association="ModeloDatos.UsuarioCaja" />
+        <AssociationConnector Association="ModeloDatos.UsuarioCajaCierre" />
+        <AssociationConnector Association="ModeloDatos.EmpresaCaja" />
+        <EntityTypeShape EntityType="ModeloDatos.TipoComprobante" Width="2" PointX="26.375" PointY="10.625" FillColor="128, 128, 255" />
+        <AssociationConnector Association="ModeloDatos.TipoComprobanteComprobante" />
+        <EntityTypeShape EntityType="ModeloDatos.DetalleCaja" Width="1.5" PointX="11" PointY="13.625" FillColor="Yellow" />
+        <AssociationConnector Association="ModeloDatos.CajaDetalleCaja" />
+        <EntityTypeShape EntityType="ModeloDatos.Movimiento" Width="2" PointX="10.5" PointY="16.125" FillColor="128, 128, 255" />
+        <AssociationConnector Association="ModeloDatos.ComprobanteMovimiento" />
+        <AssociationConnector Association="ModeloDatos.CajaMovimiento" />
+        <AssociationConnector Association="ModeloDatos.UsuarioMovimiento" />
+        <EntityTypeShape EntityType="ModeloDatos.Configuracion" Width="2.75" PointX="11.25" PointY="20.875" IsExpanded="true" FillColor="Yellow" />
+        <AssociationConnector Association="ModeloDatos.EmpresaConfiguracion" />
+        <AssociationConnector Association="ModeloDatos.TipoComprobanteConfiguracion" />
+        <EntityTypeShape EntityType="ModeloDatos.Marca" Width="1.5" PointX="26.375" PointY="4.375" FillColor="255, 128, 0" />
+        <AssociationConnector Association="ModeloDatos.MarcaArticulo" />
+        <EntityTypeShape EntityType="ModeloDatos.Rubro" Width="1.5" PointX="26.375" PointY="7.5" FillColor="255, 128, 0" />
+        <EntityTypeShape EntityType="ModeloDatos.SubRubro" Width="1.5" PointX="28.625" PointY="7.5" FillColor="255, 128, 0" />
+        <AssociationConnector Association="ModeloDatos.RubroSubRubro" />
+        <AssociationConnector Association="ModeloDatos.SubRubroArticulo" />
+        <AssociationConnector Association="ModeloDatos.EmpresaTipoComprobante" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="ModeloDatos.EmpresaRubro" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="ModeloDatos.EmpresaMarca" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ModeloDatos.Ingrediente" Width="1.5" PointX="33.875" PointY="6" />
+        <AssociationConnector Association="ModeloDatos.ArticuloIngrediente" />
+        <AssociationConnector Association="ModeloDatos.ArticuloIngrediente1" />
+        <EntityTypeShape EntityType="ModeloDatos.FormaPago" Width="1.5" PointX="31" PointY="19" FillColor="Yellow" />
+        <EntityTypeShape EntityType="ModeloDatos.FormaPagoEfectivo" Width="2" PointX="30.75" PointY="21.75" FillColor="128, 128, 255" />
+        <InheritanceConnector EntityType="ModeloDatos.FormaPagoEfectivo" ManuallyRouted="false" >
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="ModeloDatos.FormaPagoCheque" Width="1.875" PointX="34" PointY="18.375" FillColor="Yellow" />
+        <InheritanceConnector EntityType="ModeloDatos.FormaPagoCheque" ManuallyRouted="false" >
+        </InheritanceConnector>
+        <EntityTypeShape EntityType="ModeloDatos.FormaPagoCuentaCorriente" Width="2.25" PointX="27.875" PointY="21.875" FillColor="128, 128, 255" />
+        <InheritanceConnector EntityType="ModeloDatos.FormaPagoCuentaCorriente" />
+        <EntityTypeShape EntityType="ModeloDatos.FormaPagoTarjeta" Width="1.875" PointX="33.875" PointY="21.75" FillColor="Yellow" />
+        <InheritanceConnector EntityType="ModeloDatos.FormaPagoTarjeta" />
+        <EntityTypeShape EntityType="ModeloDatos.Tarjeta" Width="1.5" PointX="14" PointY="15.25" FillColor="128, 128, 255" />
+        <EntityTypeShape EntityType="ModeloDatos.PlanTarjeta" Width="1.5" PointX="16.25" PointY="15.125" FillColor="128, 128, 255" />
+        <AssociationConnector Association="ModeloDatos.TarjetaPlanTarjeta" />
+        <AssociationConnector Association="ModeloDatos.PlanTarjetaFormaPagoTarjeta" />
+        <EntityTypeShape EntityType="ModeloDatos.Banco" Width="1.5" PointX="32.875" PointY="14.875" FillColor="128, 128, 255" />
+        <AssociationConnector Association="ModeloDatos.BancoFormaPagoCheque" />
+        <AssociationConnector Association="ModeloDatos.ComprobanteFormaPago" />
+        <AssociationConnector Association="ModeloDatos.ClienteFormaPagoCuentaCorriente" />
+        <EntityTypeShape EntityType="ModeloDatos.Precio" Width="2.375" PointX="15" PointY="19.375" FillColor="255, 192, 192" />
+        <AssociationConnector Association="ModeloDatos.EmpresaPrecio" />
+        <AssociationConnector Association="ModeloDatos.ArticuloPrecio" />
+        <EntityTypeShape EntityType="ModeloDatos.ListaPrecio" Width="1.5" PointX="27.875" PointY="18" FillColor="255, 192, 192" />
+        <AssociationConnector Association="ModeloDatos.ListaPrecioPrecio" />
+        <EntityTypeShape EntityType="ModeloDatos.Deposito" Width="1.5" PointX="26.375" PointY="13.875" FillColor="Lime" />
+        <AssociationConnector Association="ModeloDatos.EmpresaDeposito" />
+        <EntityTypeShape EntityType="ModeloDatos.CuentaCorriente" Width="1.875" PointX="3.25" PointY="13.75" />
+        <AssociationConnector Association="ModeloDatos.ClienteCuentaCorriente" />
+        <EntityTypeShape EntityType="ModeloDatos.Stock" Width="1.75" PointX="33.875" PointY="9.125" FillColor="255, 128, 0" />
+        <AssociationConnector Association="ModeloDatos.DepositoStock" />
+        <AssociationConnector Association="ModeloDatos.ArticuloStock" />
+        <EntityTypeShape EntityType="ModeloDatos.BajaArticulo" Width="2.125" PointX="36.375" PointY="9.25" />
+        <AssociationConnector Association="ModeloDatos.StockBajaArticulo" />
+        <AssociationConnector Association="ModeloDatos.ListaPrecioConfiguracion" />
+        <AssociationConnector Association="ModeloDatos.DepositoConfiguracion" ManuallyRouted="false" >
+        </AssociationConnector>
+        <EntityTypeShape EntityType="ModeloDatos.Proveedor" Width="2.125" PointX="8.75" PointY="0.75" />
+        <AssociationConnector Association="ModeloDatos.CondicionIvaProveedor" />
+        <EntityTypeShape EntityType="ModeloDatos.CuentaCorrienteProveedor" Width="2.875" PointX="12.875" PointY="0.75" />
+        <AssociationConnector Association="ModeloDatos.ProveedorCuentaCorrienteProveedor" />
+        <EntityTypeShape EntityType="ModeloDatos.Compra" Width="1.5" PointX="19.625" PointY="16.25" FillColor="Yellow" />
+        <InheritanceConnector EntityType="ModeloDatos.Compra" />
+        <AssociationConnector Association="ModeloDatos.ProveedorCompra" />
+        <AssociationConnector Association="ModeloDatos.EmpresaListaPrecio" />
+        <AssociationConnector Association="ModeloDatos.EmpresaArticulo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

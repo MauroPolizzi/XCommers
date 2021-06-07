@@ -1,0 +1,1428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ModeloDatos" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="ModeloDatosContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Personas" EntityType="ModeloDatos.Persona" />
+    <EntitySet Name="Usuarios" EntityType="ModeloDatos.Usuario" />
+    <AssociationSet Name="EmpleadoUsuario" Association="ModeloDatos.EmpleadoUsuario">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+    <EntitySet Name="Empresas" EntityType="ModeloDatos.Empresa" />
+    <EntitySet Name="CondicionIvas" EntityType="ModeloDatos.CondicionIva" />
+    <AssociationSet Name="CondicionIvaEmpresa" Association="ModeloDatos.CondicionIvaEmpresa">
+      <End Role="CondicionIva" EntitySet="CondicionIvas" />
+      <End Role="Empresa" EntitySet="Empresas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoEmpresa" Association="ModeloDatos.EmpleadoEmpresa">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="Empresa" EntitySet="Empresas" />
+    </AssociationSet>
+    <EntitySet Name="Salas" EntityType="ModeloDatos.Sala" />
+    <AssociationSet Name="EmpresaSala" Association="ModeloDatos.EmpresaSala">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Sala" EntitySet="Salas" />
+    </AssociationSet>
+    <EntitySet Name="Mesas" EntityType="ModeloDatos.Mesa" />
+    <AssociationSet Name="SalaMesa" Association="ModeloDatos.SalaMesa">
+      <End Role="Sala" EntitySet="Salas" />
+      <End Role="Mesa" EntitySet="Mesas" />
+    </AssociationSet>
+    <EntitySet Name="Perfiles" EntityType="ModeloDatos.Perfil" />
+    <EntitySet Name="Formularios" EntityType="ModeloDatos.Formulario" />
+    <AssociationSet Name="UsuarioPerfil" Association="ModeloDatos.UsuarioPerfil">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Perfil" EntitySet="Perfiles" />
+    </AssociationSet>
+    <AssociationSet Name="PerfilFormulario" Association="ModeloDatos.PerfilFormulario">
+      <End Role="Perfil" EntitySet="Perfiles" />
+      <End Role="Formulario" EntitySet="Formularios" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaPerfil" Association="ModeloDatos.EmpresaPerfil">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Perfil" EntitySet="Perfiles" />
+    </AssociationSet>
+    <EntitySet Name="Comprobantes" EntityType="ModeloDatos.Comprobante" />
+    <AssociationSet Name="EmpresaComprobante" Association="ModeloDatos.EmpresaComprobante">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioComprobante" Association="ModeloDatos.UsuarioComprobante">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteComprobante" Association="ModeloDatos.ClienteComprobante">
+      <End Role="Cliente" EntitySet="Personas" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoComprobante_Salon" Association="ModeloDatos.EmpleadoComprobante_Salon">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="Comprobante_Salon" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="MesaComprobante_Salon" Association="ModeloDatos.MesaComprobante_Salon">
+      <End Role="Mesa" EntitySet="Mesas" />
+      <End Role="Comprobante_Salon" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <EntitySet Name="DetalleComprobantes" EntityType="ModeloDatos.DetalleComprobante" />
+    <AssociationSet Name="ComprobanteDetalleComprobante" Association="ModeloDatos.ComprobanteDetalleComprobante">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="DetalleComprobante" EntitySet="DetalleComprobantes" />
+    </AssociationSet>
+    <EntitySet Name="Articulos" EntityType="ModeloDatos.Articulo" />
+    <AssociationSet Name="ArticuloDetalleComprobante" Association="ModeloDatos.ArticuloDetalleComprobante">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="DetalleComprobante" EntitySet="DetalleComprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoDelivery" Association="ModeloDatos.EmpleadoDelivery">
+      <End Role="Empleado" EntitySet="Personas" />
+      <End Role="Delivery" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <EntitySet Name="Cajas" EntityType="ModeloDatos.Caja" />
+    <AssociationSet Name="UsuarioCajaApertura" Association="ModeloDatos.UsuarioCaja">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Caja" EntitySet="Cajas" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioCajaCierre" Association="ModeloDatos.UsuarioCajaCierre">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Caja" EntitySet="Cajas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaCaja" Association="ModeloDatos.EmpresaCaja">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Caja" EntitySet="Cajas" />
+    </AssociationSet>
+    <EntitySet Name="TipoComprobantes" EntityType="ModeloDatos.TipoComprobante" />
+    <AssociationSet Name="TipoComprobanteComprobante" Association="ModeloDatos.TipoComprobanteComprobante">
+      <End Role="TipoComprobante" EntitySet="TipoComprobantes" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <EntitySet Name="DetalleCajas" EntityType="ModeloDatos.DetalleCaja" />
+    <AssociationSet Name="CajaDetalleCaja" Association="ModeloDatos.CajaDetalleCaja">
+      <End Role="Caja" EntitySet="Cajas" />
+      <End Role="DetalleCaja" EntitySet="DetalleCajas" />
+    </AssociationSet>
+    <EntitySet Name="Movimientos" EntityType="ModeloDatos.Movimiento" />
+    <AssociationSet Name="ComprobanteMovimiento" Association="ModeloDatos.ComprobanteMovimiento">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="Movimiento" EntitySet="Movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="CajaMovimiento" Association="ModeloDatos.CajaMovimiento">
+      <End Role="Caja" EntitySet="Cajas" />
+      <End Role="Movimiento" EntitySet="Movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioMovimiento" Association="ModeloDatos.UsuarioMovimiento">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Movimiento" EntitySet="Movimientos" />
+    </AssociationSet>
+    <EntitySet Name="Configuraciones" EntityType="ModeloDatos.Configuracion" />
+    <AssociationSet Name="EmpresaConfiguracion" Association="ModeloDatos.EmpresaConfiguracion">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <AssociationSet Name="TipoComprobanteConfiguracion" Association="ModeloDatos.TipoComprobanteConfiguracion">
+      <End Role="TipoComprobante" EntitySet="TipoComprobantes" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <EntitySet Name="Marcas" EntityType="ModeloDatos.Marca" />
+    <AssociationSet Name="MarcaArticulo" Association="ModeloDatos.MarcaArticulo">
+      <End Role="Marca" EntitySet="Marcas" />
+      <End Role="Articulo" EntitySet="Articulos" />
+    </AssociationSet>
+    <EntitySet Name="Rubros" EntityType="ModeloDatos.Rubro" />
+    <EntitySet Name="SubRubros" EntityType="ModeloDatos.SubRubro" />
+    <AssociationSet Name="RubroSubRubro" Association="ModeloDatos.RubroSubRubro">
+      <End Role="Rubro" EntitySet="Rubros" />
+      <End Role="SubRubro" EntitySet="SubRubros" />
+    </AssociationSet>
+    <AssociationSet Name="SubRubroArticulo" Association="ModeloDatos.SubRubroArticulo">
+      <End Role="SubRubro" EntitySet="SubRubros" />
+      <End Role="Articulo" EntitySet="Articulos" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaTipoComprobante" Association="ModeloDatos.EmpresaTipoComprobante">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="TipoComprobante" EntitySet="TipoComprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaRubro" Association="ModeloDatos.EmpresaRubro">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Rubro" EntitySet="Rubros" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaMarca" Association="ModeloDatos.EmpresaMarca">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Marca" EntitySet="Marcas" />
+    </AssociationSet>
+    <EntitySet Name="Ingredientes" EntityType="ModeloDatos.Ingrediente" />
+    <AssociationSet Name="ArticuloIngrediente" Association="ModeloDatos.ArticuloIngrediente">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Ingrediente" EntitySet="Ingredientes" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloIngrediente1" Association="ModeloDatos.ArticuloIngrediente1">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Ingrediente" EntitySet="Ingredientes" />
+    </AssociationSet>
+    <EntitySet Name="FormaPagos" EntityType="ModeloDatos.FormaPago" />
+    <EntitySet Name="Tarjetas" EntityType="ModeloDatos.Tarjeta" />
+    <EntitySet Name="PlanTarjetas" EntityType="ModeloDatos.PlanTarjeta" />
+    <AssociationSet Name="TarjetaPlanTarjeta" Association="ModeloDatos.TarjetaPlanTarjeta">
+      <End Role="Tarjeta" EntitySet="Tarjetas" />
+      <End Role="PlanTarjeta" EntitySet="PlanTarjetas" />
+    </AssociationSet>
+    <AssociationSet Name="PlanTarjetaFormaPagoTarjeta" Association="ModeloDatos.PlanTarjetaFormaPagoTarjeta">
+      <End Role="PlanTarjeta" EntitySet="PlanTarjetas" />
+      <End Role="FormaPagoTarjeta" EntitySet="FormaPagos" />
+    </AssociationSet>
+    <EntitySet Name="Bancos" EntityType="ModeloDatos.Banco" />
+    <AssociationSet Name="BancoFormaPagoCheque" Association="ModeloDatos.BancoFormaPagoCheque">
+      <End Role="Banco" EntitySet="Bancos" />
+      <End Role="FormaPagoCheque" EntitySet="FormaPagos" />
+    </AssociationSet>
+    <AssociationSet Name="ComprobanteFormaPago" Association="ModeloDatos.ComprobanteFormaPago">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="FormaPago" EntitySet="FormaPagos" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteFormaPagoCuentaCorriente" Association="ModeloDatos.ClienteFormaPagoCuentaCorriente">
+      <End Role="Cliente" EntitySet="Personas" />
+      <End Role="FormaPagoCuentaCorriente" EntitySet="FormaPagos" />
+    </AssociationSet>
+    <EntitySet Name="Precios" EntityType="ModeloDatos.Precio" />
+    <AssociationSet Name="EmpresaPrecio" Association="ModeloDatos.EmpresaPrecio">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Precio" EntitySet="Precios" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloPrecio" Association="ModeloDatos.ArticuloPrecio">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Precio" EntitySet="Precios" />
+    </AssociationSet>
+    <EntitySet Name="ListaPrecios" EntityType="ModeloDatos.ListaPrecio" />
+    <AssociationSet Name="ListaPrecioPrecio" Association="ModeloDatos.ListaPrecioPrecio">
+      <End Role="ListaPrecio" EntitySet="ListaPrecios" />
+      <End Role="Precio" EntitySet="Precios" />
+    </AssociationSet>
+    <EntitySet Name="Depositos" EntityType="ModeloDatos.Deposito" />
+    <AssociationSet Name="EmpresaDeposito" Association="ModeloDatos.EmpresaDeposito">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Deposito" EntitySet="Depositos" />
+    </AssociationSet>
+    <EntitySet Name="CuentaCorrientes" EntityType="ModeloDatos.CuentaCorriente" />
+    <AssociationSet Name="ClienteCuentaCorriente" Association="ModeloDatos.ClienteCuentaCorriente">
+      <End Role="Cliente" EntitySet="Personas" />
+      <End Role="CuentaCorriente" EntitySet="CuentaCorrientes" />
+    </AssociationSet>
+    <EntitySet Name="Stocks" EntityType="ModeloDatos.Stock" />
+    <AssociationSet Name="DepositoStock" Association="ModeloDatos.DepositoStock">
+      <End Role="Deposito" EntitySet="Depositos" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloStock" Association="ModeloDatos.ArticuloStock">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+    <EntitySet Name="BajasArticulos" EntityType="ModeloDatos.BajaArticulo" />
+    <AssociationSet Name="StockBajaArticulo" Association="ModeloDatos.StockBajaArticulo">
+      <End Role="Stock" EntitySet="Stocks" />
+      <End Role="BajaArticulo" EntitySet="BajasArticulos" />
+    </AssociationSet>
+    <AssociationSet Name="ListaPrecioConfiguracion" Association="ModeloDatos.ListaPrecioConfiguracion">
+      <End Role="ListaPrecio" EntitySet="ListaPrecios" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <AssociationSet Name="DepositoConfiguracion" Association="ModeloDatos.DepositoConfiguracion">
+      <End Role="Deposito" EntitySet="Depositos" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <EntitySet Name="Proveedores" EntityType="ModeloDatos.Proveedor" />
+    <AssociationSet Name="CondicionIvaProveedor" Association="ModeloDatos.CondicionIvaProveedor">
+      <End Role="CondicionIva" EntitySet="CondicionIvas" />
+      <End Role="Proveedor" EntitySet="Proveedores" />
+    </AssociationSet>
+    <EntitySet Name="CuentaCorrienteProveedores" EntityType="ModeloDatos.CuentaCorrienteProveedor" />
+    <AssociationSet Name="ProveedorCuentaCorrienteProveedor" Association="ModeloDatos.ProveedorCuentaCorrienteProveedor">
+      <End Role="Proveedor" EntitySet="Proveedores" />
+      <End Role="CuentaCorrienteProveedor" EntitySet="CuentaCorrienteProveedores" />
+    </AssociationSet>
+    <AssociationSet Name="ProveedorCompra" Association="ModeloDatos.ProveedorCompra">
+      <End Role="Proveedor" EntitySet="Proveedores" />
+      <End Role="Compra" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaListaPrecio" Association="ModeloDatos.EmpresaListaPrecio">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="ListaPrecio" EntitySet="ListaPrecios" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaArticulo" Association="ModeloDatos.EmpresaArticulo">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Articulo" EntitySet="Articulos" />
+    </AssociationSet>
+  </EntityContainer>
+  <EnumType Name="EstadoMesa">
+    <Member Name="Abierta" Value="1" />
+    <Member Name="Reservada" Value="2" />
+    <Member Name="Cerrada" Value="3" />
+    <Member Name="FueraServicio" Value="4" />
+  </EnumType>
+  <EntityType Name="Persona" Abstract="true">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Apellido" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Dni" Type="String" Nullable="false" MaxLength="8" Unicode="true" FixedLength="false" />
+    <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="400" Unicode="true" FixedLength="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Celular" Type="String" Nullable="false" MaxLength="25" Unicode="true" FixedLength="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Empleado" BaseType="ModeloDatos.Persona">
+    <Property Name="Legajo" Type="Int32" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Foto" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Usuarios" Relationship="ModeloDatos.EmpleadoUsuario" FromRole="Empleado" ToRole="Usuario" />
+    <NavigationProperty Name="Empresas" Relationship="ModeloDatos.EmpleadoEmpresa" FromRole="Empleado" ToRole="Empresa" />
+    <NavigationProperty Name="Comprobantes_Salon" Relationship="ModeloDatos.EmpleadoComprobante_Salon" FromRole="Empleado" ToRole="Comprobante_Salon" />
+    <NavigationProperty Name="Deliveries" Relationship="ModeloDatos.EmpleadoDelivery" FromRole="Empleado" ToRole="Delivery" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Empleado" Relationship="ModeloDatos.EmpleadoUsuario" FromRole="Usuario" ToRole="Empleado" />
+    <Property Name="EmpleadoId" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="400" />
+    <Property Name="EstaBloqueado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Perfiles" Relationship="ModeloDatos.UsuarioPerfil" FromRole="Usuario" ToRole="Perfil" />
+    <NavigationProperty Name="Comprobantes" Relationship="ModeloDatos.UsuarioComprobante" FromRole="Usuario" ToRole="Comprobante" />
+    <NavigationProperty Name="CajasApertura" Relationship="ModeloDatos.UsuarioCaja" FromRole="Usuario" ToRole="Caja" />
+    <NavigationProperty Name="CajasCierres" Relationship="ModeloDatos.UsuarioCajaCierre" FromRole="Usuario" ToRole="Caja" />
+    <NavigationProperty Name="Movimientos" Relationship="ModeloDatos.UsuarioMovimiento" FromRole="Usuario" ToRole="Movimiento" />
+  </EntityType>
+  <Association Name="EmpleadoUsuario">
+    <End Type="ModeloDatos.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="ModeloDatos.Usuario" Role="Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="CondicionIva" Relationship="ModeloDatos.CondicionIvaEmpresa" FromRole="Empresa" ToRole="CondicionIva" />
+    <Property Name="CondicionIvaId" Type="Int64" Nullable="false" />
+    <Property Name="RazonSocial" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="NombreFantasia" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="Cuit" Type="String" Nullable="false" MaxLength="13" />
+    <Property Name="Domicilio" Type="String" Nullable="false" MaxLength="400" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="25" />
+    <Property Name="Mail" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="Sucursal" Type="Int32" Nullable="false" />
+    <Property Name="Logo" Type="Binary" Nullable="false" />
+    <NavigationProperty Name="Empleados" Relationship="ModeloDatos.EmpleadoEmpresa" FromRole="Empresa" ToRole="Empleado" />
+    <NavigationProperty Name="Salas" Relationship="ModeloDatos.EmpresaSala" FromRole="Empresa" ToRole="Sala" />
+    <NavigationProperty Name="Perfiles" Relationship="ModeloDatos.EmpresaPerfil" FromRole="Empresa" ToRole="Perfil" />
+    <NavigationProperty Name="Comprobantes" Relationship="ModeloDatos.EmpresaComprobante" FromRole="Empresa" ToRole="Comprobante" />
+    <NavigationProperty Name="Cajas" Relationship="ModeloDatos.EmpresaCaja" FromRole="Empresa" ToRole="Caja" />
+    <NavigationProperty Name="Configuraciones" Relationship="ModeloDatos.EmpresaConfiguracion" FromRole="Empresa" ToRole="Configuracion" />
+    <NavigationProperty Name="TipoComprobantes" Relationship="ModeloDatos.EmpresaTipoComprobante" FromRole="Empresa" ToRole="TipoComprobante" />
+    <NavigationProperty Name="Rubros" Relationship="ModeloDatos.EmpresaRubro" FromRole="Empresa" ToRole="Rubro" />
+    <NavigationProperty Name="Marcas" Relationship="ModeloDatos.EmpresaMarca" FromRole="Empresa" ToRole="Marca" />
+    <NavigationProperty Name="Precios" Relationship="ModeloDatos.EmpresaPrecio" FromRole="Empresa" ToRole="Precio" />
+    <NavigationProperty Name="Depositos" Relationship="ModeloDatos.EmpresaDeposito" FromRole="Empresa" ToRole="Deposito" />
+    <NavigationProperty Name="ListaPrecios" Relationship="ModeloDatos.EmpresaListaPrecio" FromRole="Empresa" ToRole="ListaPrecio" />
+    <NavigationProperty Name="Articulos" Relationship="ModeloDatos.EmpresaArticulo" FromRole="Empresa" ToRole="Articulo" />
+  </EntityType>
+  <EntityType Name="CondicionIva">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Empresas" Relationship="ModeloDatos.CondicionIvaEmpresa" FromRole="CondicionIva" ToRole="Empresa" />
+    <NavigationProperty Name="Proveedores" Relationship="ModeloDatos.CondicionIvaProveedor" FromRole="CondicionIva" ToRole="Proveedor" />
+  </EntityType>
+  <Association Name="CondicionIvaEmpresa">
+    <End Type="ModeloDatos.CondicionIva" Role="CondicionIva" Multiplicity="1" />
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionIva">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="CondicionIvaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoEmpresa">
+    <End Type="ModeloDatos.Empleado" Role="Empleado" Multiplicity="*" />
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Sala">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaSala" FromRole="Sala" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Mesas" Relationship="ModeloDatos.SalaMesa" FromRole="Sala" ToRole="Mesa" />
+  </EntityType>
+  <Association Name="EmpresaSala">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Sala" Role="Sala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sala">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Mesa">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Sala" Relationship="ModeloDatos.SalaMesa" FromRole="Mesa" ToRole="Sala" />
+    <Property Name="SalaId" Type="Int64" Nullable="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstadoMesa" Type="ModeloDatos.EstadoMesa" Nullable="false" />
+    <NavigationProperty Name="Comprobantes_Salon" Relationship="ModeloDatos.MesaComprobante_Salon" FromRole="Mesa" ToRole="Comprobante_Salon" />
+  </EntityType>
+  <Association Name="SalaMesa">
+    <End Type="ModeloDatos.Sala" Role="Sala" Multiplicity="1" />
+    <End Type="ModeloDatos.Mesa" Role="Mesa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sala">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Mesa">
+        <PropertyRef Name="SalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Perfil">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <NavigationProperty Name="Usuarios" Relationship="ModeloDatos.UsuarioPerfil" FromRole="Perfil" ToRole="Usuario" />
+    <NavigationProperty Name="Formularios" Relationship="ModeloDatos.PerfilFormulario" FromRole="Perfil" ToRole="Formulario" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaPerfil" FromRole="Perfil" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Formulario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="String" Nullable="false" MaxLength="5" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="DescripcionCompleta" Type="String" Nullable="false" MaxLength="255" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Perfiles" Relationship="ModeloDatos.PerfilFormulario" FromRole="Formulario" ToRole="Perfil" />
+  </EntityType>
+  <Association Name="UsuarioPerfil">
+    <End Type="ModeloDatos.Usuario" Role="Usuario" Multiplicity="*" />
+    <End Type="ModeloDatos.Perfil" Role="Perfil" Multiplicity="*" />
+  </Association>
+  <Association Name="PerfilFormulario">
+    <End Type="ModeloDatos.Perfil" Role="Perfil" Multiplicity="*" />
+    <End Type="ModeloDatos.Formulario" Role="Formulario" Multiplicity="*" />
+  </Association>
+  <Association Name="EmpresaPerfil">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Perfil" Role="Perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Perfil">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Comprobante" Abstract="true">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Numero" Type="Int64" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="SubTotal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Descuento" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Total" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaComprobante" FromRole="Comprobante" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="ModeloDatos.UsuarioComprobante" FromRole="Comprobante" ToRole="Usuario" />
+    <Property Name="UsuarioId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Cliente" Relationship="ModeloDatos.ClienteComprobante" FromRole="Comprobante" ToRole="Cliente" />
+    <Property Name="ClienteId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="DetalleComprobantes" Relationship="ModeloDatos.ComprobanteDetalleComprobante" FromRole="Comprobante" ToRole="DetalleComprobante" />
+    <NavigationProperty Name="TipoComprobante" Relationship="ModeloDatos.TipoComprobanteComprobante" FromRole="Comprobante" ToRole="TipoComprobante" />
+    <Property Name="TipoComprobanteId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Movimientos" Relationship="ModeloDatos.ComprobanteMovimiento" FromRole="Comprobante" ToRole="Movimiento" />
+    <NavigationProperty Name="FormasPagos" Relationship="ModeloDatos.ComprobanteFormaPago" FromRole="Comprobante" ToRole="FormaPago" />
+  </EntityType>
+  <EntityType Name="Salon" BaseType="ModeloDatos.Comprobante">
+    <Property Name="Estado" Type="ModeloDatos.EstadoSalon" Nullable="false" />
+    <Property Name="Comensales" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="ModeloDatos.EmpleadoComprobante_Salon" FromRole="Comprobante_Salon" ToRole="Empleado" />
+    <Property Name="EmpleadoId" Type="Int64" Nullable="true" />
+    <NavigationProperty Name="Mesa" Relationship="ModeloDatos.MesaComprobante_Salon" FromRole="Comprobante_Salon" ToRole="Mesa" />
+    <Property Name="MesaId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Delivery" BaseType="ModeloDatos.Comprobante">
+    <Property Name="Estado" Type="ModeloDatos.EstadoDelivery" Nullable="false" />
+    <Property Name="CostoEnvio" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="Empleado" Relationship="ModeloDatos.EmpleadoDelivery" FromRole="Delivery" ToRole="Empleado" />
+    <Property Name="EmpleadoId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Factura" BaseType="ModeloDatos.Comprobante" />
+  <Association Name="EmpresaComprobante">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioComprobante">
+    <End Type="ModeloDatos.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cliente" BaseType="ModeloDatos.Persona">
+    <Property Name="MontoMaximoCompra" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TieneCuentaCorriente" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Comprobantes" Relationship="ModeloDatos.ClienteComprobante" FromRole="Cliente" ToRole="Comprobante" />
+    <Property Name="EstaBloqueado" Type="Boolean" Nullable="false" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="FormasPagosCuentasCorrientes" Relationship="ModeloDatos.ClienteFormaPagoCuentaCorriente" FromRole="Cliente" ToRole="FormaPagoCuentaCorriente" />
+    <NavigationProperty Name="CuentasCorrientes" Relationship="ModeloDatos.ClienteCuentaCorriente" FromRole="Cliente" ToRole="CuentaCorriente" />
+    <Property Name="Visible" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteComprobante">
+    <End Type="ModeloDatos.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoComprobante_Salon">
+    <End Type="ModeloDatos.Empleado" Role="Empleado" Multiplicity="0..1" />
+    <End Type="ModeloDatos.Salon" Role="Comprobante_Salon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante_Salon">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MesaComprobante_Salon">
+    <End Type="ModeloDatos.Mesa" Role="Mesa" Multiplicity="1" />
+    <End Type="ModeloDatos.Salon" Role="Comprobante_Salon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mesa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante_Salon">
+        <PropertyRef Name="MesaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EnumType Name="EstadoSalon">
+    <Member Name="EnProceso" Value="1" />
+    <Member Name="Facturada" Value="2" />
+  </EnumType>
+  <EnumType Name="EstadoDelivery">
+    <Member Name="EnProceso" Value="1" />
+    <Member Name="Enviado" Value="2" />
+    <Member Name="Cancelado" Value="3" />
+    <Member Name="Rechazado" Value="4" />
+    <Member Name="Pagado" Value="5" />
+  </EnumType>
+  <EntityType Name="DetalleComprobante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Comprobante" Relationship="ModeloDatos.ComprobanteDetalleComprobante" FromRole="DetalleComprobante" ToRole="Comprobante" />
+    <Property Name="ComprobanteId" Type="Int64" Nullable="false" />
+    <Property Name="Codigo" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="400" />
+    <Property Name="PrecioUnitario" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="SubTotal" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="Articulo" Relationship="ModeloDatos.ArticuloDetalleComprobante" FromRole="DetalleComprobante" ToRole="Articulo" />
+    <Property Name="ArticuloId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="ComprobanteDetalleComprobante">
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="1" />
+    <End Type="ModeloDatos.DetalleComprobante" Role="DetalleComprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleComprobante">
+        <PropertyRef Name="ComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="String" Nullable="false" />
+    <Property Name="CodigoBarra" Type="String" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" />
+    <NavigationProperty Name="DetalleComprobantes" Relationship="ModeloDatos.ArticuloDetalleComprobante" FromRole="Articulo" ToRole="DetalleComprobante" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <Property Name="Abreviatura" Type="String" Nullable="false" />
+    <NavigationProperty Name="Marca" Relationship="ModeloDatos.MarcaArticulo" FromRole="Articulo" ToRole="Marca" />
+    <Property Name="MarcaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="SubRubro" Relationship="ModeloDatos.SubRubroArticulo" FromRole="Articulo" ToRole="SubRubro" />
+    <Property Name="SubRubroId" Type="Int64" Nullable="false" />
+    <Property Name="Foto" Type="Binary" Nullable="false" />
+    <Property Name="ActivarLimiteVenta" Type="Boolean" Nullable="false" />
+    <Property Name="CantidadLimiteVenta" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PermiteStockNegativo" Type="Boolean" Nullable="false" />
+    <Property Name="EstaDiscontinuado" Type="Boolean" Nullable="false" />
+    <Property Name="TipoArticulo" Type="ModeloDatos.TipoArticulo" Nullable="false" />
+    <Property Name="StockMaximo" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="StockMinimo" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DescuentaStock" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="IngredientesPadres" Relationship="ModeloDatos.ArticuloIngrediente" FromRole="Articulo" ToRole="Ingrediente" />
+    <NavigationProperty Name="IngredientesHijos" Relationship="ModeloDatos.ArticuloIngrediente1" FromRole="Articulo" ToRole="Ingrediente" />
+    <Property Name="SePuedeFraccionar" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Precios" Relationship="ModeloDatos.ArticuloPrecio" FromRole="Articulo" ToRole="Precio" />
+    <NavigationProperty Name="Stocks" Relationship="ModeloDatos.ArticuloStock" FromRole="Articulo" ToRole="Stock" />
+    <Property Name="Detalle" Type="String" Nullable="false" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaArticulo" FromRole="Articulo" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="ArticuloDetalleComprobante">
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="1" />
+    <End Type="ModeloDatos.DetalleComprobante" Role="DetalleComprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleComprobante">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoDelivery">
+    <End Type="ModeloDatos.Empleado" Role="Empleado" Multiplicity="1" />
+    <End Type="ModeloDatos.Delivery" Role="Delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Delivery">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Caja">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="UsuarioApertura" Relationship="ModeloDatos.UsuarioCaja" FromRole="Caja" ToRole="Usuario" />
+    <Property Name="UsuarioAperturaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="UsuarioCierre" Relationship="ModeloDatos.UsuarioCajaCierre" FromRole="Caja" ToRole="Usuario" />
+    <Property Name="UsuarioCierreId" Type="Int64" Nullable="true" />
+    <Property Name="MontoApertura" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MontoCierre" Type="Decimal" Precision="18" Scale="2" Nullable="true" />
+    <Property Name="FechaApertura" Type="DateTime" Nullable="false" />
+    <Property Name="FechaCierre" Type="DateTime" Nullable="true" />
+    <Property Name="MontoSistema" Type="Decimal" Precision="18" Scale="2" Nullable="true" />
+    <Property Name="Diferencia" Type="Decimal" Precision="18" Scale="2" Nullable="true" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaCaja" FromRole="Caja" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="DetalleCajas" Relationship="ModeloDatos.CajaDetalleCaja" FromRole="Caja" ToRole="DetalleCaja" />
+    <NavigationProperty Name="Movimientos" Relationship="ModeloDatos.CajaMovimiento" FromRole="Caja" ToRole="Movimiento" />
+  </EntityType>
+  <Association Name="UsuarioCaja">
+    <End Type="ModeloDatos.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="ModeloDatos.Caja" Role="Caja" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="UsuarioAperturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioCajaCierre">
+    <End Type="ModeloDatos.Usuario" Role="Usuario" Multiplicity="0..1" />
+    <End Type="ModeloDatos.Caja" Role="Caja" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="UsuarioCierreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaCaja">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Caja" Role="Caja" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TipoComprobante">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Comprobantes" Relationship="ModeloDatos.TipoComprobanteComprobante" FromRole="TipoComprobante" ToRole="Comprobante" />
+    <NavigationProperty Name="Configuraciones" Relationship="ModeloDatos.TipoComprobanteConfiguracion" FromRole="TipoComprobante" ToRole="Configuracion" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaTipoComprobante" FromRole="TipoComprobante" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <Property Name="Letra" Type="String" Nullable="false" MaxLength="5" />
+  </EntityType>
+  <Association Name="TipoComprobanteComprobante">
+    <End Type="ModeloDatos.TipoComprobante" Role="TipoComprobante" Multiplicity="1" />
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoComprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="TipoComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="DetalleCaja">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Caja" Relationship="ModeloDatos.CajaDetalleCaja" FromRole="DetalleCaja" ToRole="Caja" />
+    <Property Name="CajaId" Type="Int64" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TipoPago" Type="ModeloDatos.TipoPago" Nullable="false" />
+  </EntityType>
+  <Association Name="CajaDetalleCaja">
+    <End Type="ModeloDatos.Caja" Role="Caja" Multiplicity="1" />
+    <End Type="ModeloDatos.DetalleCaja" Role="DetalleCaja" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caja">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleCaja">
+        <PropertyRef Name="CajaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EnumType Name="TipoPago">
+    <Member Name="Efectivo" Value="1" />
+    <Member Name="Tarjeta" Value="2" />
+    <Member Name="Cheque" Value="3" />
+    <Member Name="CuentaCorriente" Value="4" />
+    <Member Name="Transferencia" />
+  </EnumType>
+  <EntityType Name="Movimiento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Comprobante" Relationship="ModeloDatos.ComprobanteMovimiento" FromRole="Movimiento" ToRole="Comprobante" />
+    <Property Name="ComprobanteId" Type="Int64" Nullable="false" />
+    <Property Name="TipoMovimiento" Type="ModeloDatos.TipoMovimiento" Nullable="false" />
+    <NavigationProperty Name="Caja" Relationship="ModeloDatos.CajaMovimiento" FromRole="Movimiento" ToRole="Caja" />
+    <Property Name="CajaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="ModeloDatos.UsuarioMovimiento" FromRole="Movimiento" ToRole="Usuario" />
+    <Property Name="UsuarioId" Type="Int64" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="ComprobanteMovimiento">
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="1" />
+    <End Type="ModeloDatos.Movimiento" Role="Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="ComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EnumType Name="TipoMovimiento">
+    <Member Name="Ingreso" Value="1" />
+    <Member Name="Egreso" Value="2" />
+  </EnumType>
+  <Association Name="CajaMovimiento">
+    <End Type="ModeloDatos.Caja" Role="Caja" Multiplicity="1" />
+    <End Type="ModeloDatos.Movimiento" Role="Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caja">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="CajaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioMovimiento">
+    <End Type="ModeloDatos.Usuario" Role="Usuario" Multiplicity="1" />
+    <End Type="ModeloDatos.Movimiento" Role="Movimiento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Configuracion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaConfiguracion" FromRole="Configuracion" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="TipoComprobantePorDefecto" Relationship="ModeloDatos.TipoComprobanteConfiguracion" FromRole="Configuracion" ToRole="TipoComprobante" />
+    <Property Name="TipoComprobantePorDefectoId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ListaPrecioPorDefecto" Relationship="ModeloDatos.ListaPrecioConfiguracion" FromRole="Configuracion" ToRole="ListaPrecio" />
+    <Property Name="ListaPrecioPorDefectoId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="DepositoPorDefecto" Relationship="ModeloDatos.DepositoConfiguracion" FromRole="Configuracion" ToRole="Deposito" />
+    <Property Name="DepositoPorDefectoId" Type="Int64" Nullable="false" />
+    <Property Name="PuestoDeCajaSeparado" Type="Boolean" Nullable="false" />
+    <Property Name="SeCobraCubiertos" Type="Boolean" Nullable="false" />
+    <Property Name="MontoPorCubierto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="GrabarProductoEnTodosDepositos" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="EmpresaConfiguracion">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Configuracion" Role="Configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TipoComprobanteConfiguracion">
+    <End Type="ModeloDatos.TipoComprobante" Role="TipoComprobante" Multiplicity="1" />
+    <End Type="ModeloDatos.Configuracion" Role="Configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoComprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="TipoComprobantePorDefectoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Marca">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Articulos" Relationship="ModeloDatos.MarcaArticulo" FromRole="Marca" ToRole="Articulo" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaMarca" FromRole="Marca" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="MarcaArticulo">
+    <End Type="ModeloDatos.Marca" Role="Marca" Multiplicity="1" />
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="MarcaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Rubro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SubRubros" Relationship="ModeloDatos.RubroSubRubro" FromRole="Rubro" ToRole="SubRubro" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaRubro" FromRole="Rubro" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubRubro">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Rubro" Relationship="ModeloDatos.RubroSubRubro" FromRole="SubRubro" ToRole="Rubro" />
+    <Property Name="RubroId" Type="Int64" Nullable="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Articulos" Relationship="ModeloDatos.SubRubroArticulo" FromRole="SubRubro" ToRole="Articulo" />
+  </EntityType>
+  <Association Name="RubroSubRubro">
+    <End Type="ModeloDatos.Rubro" Role="Rubro" Multiplicity="1" />
+    <End Type="ModeloDatos.SubRubro" Role="SubRubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubRubro">
+        <PropertyRef Name="RubroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SubRubroArticulo">
+    <End Type="ModeloDatos.SubRubro" Role="SubRubro" Multiplicity="1" />
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubRubro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="SubRubroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EnumType Name="TipoArticulo">
+    <Member Name="Simple" Value="1" />
+    <Member Name="Compuesto" Value="2" />
+    <Member Name="Promocion" Value="3" />
+    <Member Name="Ingrediente" Value="4" />
+  </EnumType>
+  <Association Name="EmpresaTipoComprobante">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.TipoComprobante" Role="TipoComprobante" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TipoComprobante">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaRubro">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Rubro" Role="Rubro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rubro">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaMarca">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Marca" Role="Marca" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Marca">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Ingrediente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="ArticuloPadre" Relationship="ModeloDatos.ArticuloIngrediente" FromRole="Ingrediente" ToRole="Articulo" />
+    <Property Name="ArticuloPadreId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ArticuloHijo" Relationship="ModeloDatos.ArticuloIngrediente1" FromRole="Ingrediente" ToRole="Articulo" />
+    <Property Name="ArticuloHijoId" Type="Int64" Nullable="false" />
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="ArticuloIngrediente">
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="1" />
+    <End Type="ModeloDatos.Ingrediente" Role="Ingrediente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ingrediente">
+        <PropertyRef Name="ArticuloPadreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloIngrediente1">
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="1" />
+    <End Type="ModeloDatos.Ingrediente" Role="Ingrediente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ingrediente">
+        <PropertyRef Name="ArticuloHijoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="FormaPago">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Comprobante" Relationship="ModeloDatos.ComprobanteFormaPago" FromRole="FormaPago" ToRole="Comprobante" />
+    <Property Name="ComprobanteId" Type="Int64" Nullable="false" />
+    <Property Name="TipoFormaPago" Type="ModeloDatos.TipoFormaPago" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="FormaPagoEfectivo" BaseType="ModeloDatos.FormaPago" />
+  <EntityType Name="FormaPagoCheque" BaseType="ModeloDatos.FormaPago">
+    <NavigationProperty Name="Banco" Relationship="ModeloDatos.BancoFormaPagoCheque" FromRole="FormaPagoCheque" ToRole="Banco" />
+    <Property Name="BancoId" Type="Int64" Nullable="false" />
+    <Property Name="Numero" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="EnteEmisor" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="FechaEmision" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormaPagoCuentaCorriente" BaseType="ModeloDatos.FormaPago">
+    <NavigationProperty Name="Cliente" Relationship="ModeloDatos.ClienteFormaPagoCuentaCorriente" FromRole="FormaPagoCuentaCorriente" ToRole="Cliente" />
+    <Property Name="ClienteId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormaPagoTarjeta" BaseType="ModeloDatos.FormaPago">
+    <NavigationProperty Name="PlanTarjeta" Relationship="ModeloDatos.PlanTarjetaFormaPagoTarjeta" FromRole="FormaPagoTarjeta" ToRole="PlanTarjeta" />
+    <Property Name="PlanTarjetaId" Type="Int64" Nullable="false" />
+    <Property Name="Cupon" Type="String" Nullable="false" MaxLength="50" />
+    <Property Name="Numero" Type="String" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tarjeta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="PlanesTarjetas" Relationship="ModeloDatos.TarjetaPlanTarjeta" FromRole="Tarjeta" ToRole="PlanTarjeta" />
+  </EntityType>
+  <EntityType Name="PlanTarjeta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Tarjeta" Relationship="ModeloDatos.TarjetaPlanTarjeta" FromRole="PlanTarjeta" ToRole="Tarjeta" />
+    <Property Name="TarjetaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="FormasPagosTarjetas" Relationship="ModeloDatos.PlanTarjetaFormaPagoTarjeta" FromRole="PlanTarjeta" ToRole="FormaPagoTarjeta" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="Alicuota" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <Association Name="TarjetaPlanTarjeta">
+    <End Type="ModeloDatos.Tarjeta" Role="Tarjeta" Multiplicity="1" />
+    <End Type="ModeloDatos.PlanTarjeta" Role="PlanTarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarjeta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlanTarjeta">
+        <PropertyRef Name="TarjetaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PlanTarjetaFormaPagoTarjeta">
+    <End Type="ModeloDatos.PlanTarjeta" Role="PlanTarjeta" Multiplicity="1" />
+    <End Type="ModeloDatos.FormaPagoTarjeta" Role="FormaPagoTarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlanTarjeta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoTarjeta">
+        <PropertyRef Name="PlanTarjetaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Banco">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="FormasPagosCheques" Relationship="ModeloDatos.BancoFormaPagoCheque" FromRole="Banco" ToRole="FormaPagoCheque" />
+  </EntityType>
+  <Association Name="BancoFormaPagoCheque">
+    <End Type="ModeloDatos.Banco" Role="Banco" Multiplicity="1" />
+    <End Type="ModeloDatos.FormaPagoCheque" Role="FormaPagoCheque" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banco">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoCheque">
+        <PropertyRef Name="BancoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComprobanteFormaPago">
+    <End Type="ModeloDatos.Comprobante" Role="Comprobante" Multiplicity="1" />
+    <End Type="ModeloDatos.FormaPago" Role="FormaPago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPago">
+        <PropertyRef Name="ComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EnumType Name="TipoFormaPago">
+    <Member Name="Efectivo" Value="1" />
+    <Member Name="Cheque" Value="2" />
+    <Member Name="CuentaCorriente" Value="3" />
+    <Member Name="Tarjeta" Value="4" />
+  </EnumType>
+  <Association Name="ClienteFormaPagoCuentaCorriente">
+    <End Type="ModeloDatos.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="ModeloDatos.FormaPagoCuentaCorriente" Role="FormaPagoCuentaCorriente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoCuentaCorriente">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Precio">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaActualizacion" Type="DateTime" Nullable="false" />
+    <Property Name="PrecioCosto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PrecioPublico" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Rentabilidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaPrecio" FromRole="Precio" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Articulo" Relationship="ModeloDatos.ArticuloPrecio" FromRole="Precio" ToRole="Articulo" />
+    <Property Name="ArticuloId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="ListaPrecio" Relationship="ModeloDatos.ListaPrecioPrecio" FromRole="Precio" ToRole="ListaPrecio" />
+    <Property Name="ListaPrecioId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="EmpresaPrecio">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Precio" Role="Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloPrecio">
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="1" />
+    <End Type="ModeloDatos.Precio" Role="Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ListaPrecio">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <NavigationProperty Name="Precios" Relationship="ModeloDatos.ListaPrecioPrecio" FromRole="ListaPrecio" ToRole="Precio" />
+    <NavigationProperty Name="Configuraciones" Relationship="ModeloDatos.ListaPrecioConfiguracion" FromRole="ListaPrecio" ToRole="Configuracion" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaListaPrecio" FromRole="ListaPrecio" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <Property Name="EstaEliminada" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="ListaPrecioPrecio">
+    <End Type="ModeloDatos.ListaPrecio" Role="ListaPrecio" Multiplicity="1" />
+    <End Type="ModeloDatos.Precio" Role="Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListaPrecio">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="ListaPrecioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Deposito">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Empresa" Relationship="ModeloDatos.EmpresaDeposito" FromRole="Deposito" ToRole="Empresa" />
+    <Property Name="EmpresaId" Type="Int64" Nullable="false" />
+    <Property Name="Codigo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Stocks" Relationship="ModeloDatos.DepositoStock" FromRole="Deposito" ToRole="Stock" />
+    <NavigationProperty Name="Configuraciones" Relationship="ModeloDatos.DepositoConfiguracion" FromRole="Deposito" ToRole="Configuracion" />
+  </EntityType>
+  <Association Name="EmpresaDeposito">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Deposito" Role="Deposito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Deposito">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CuentaCorriente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Cliente" Relationship="ModeloDatos.ClienteCuentaCorriente" FromRole="CuentaCorriente" ToRole="Cliente" />
+    <Property Name="ClienteId" Type="Int64" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="400" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TipoMovimiento" Type="ModeloDatos.TipoMovimiento" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <Association Name="ClienteCuentaCorriente">
+    <End Type="ModeloDatos.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="ModeloDatos.CuentaCorriente" Role="CuentaCorriente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CuentaCorriente">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Stock">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Deposito" Relationship="ModeloDatos.DepositoStock" FromRole="Stock" ToRole="Deposito" />
+    <Property Name="DepositoId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Articulo" Relationship="ModeloDatos.ArticuloStock" FromRole="Stock" ToRole="Articulo" />
+    <Property Name="ArticuloId" Type="Int64" Nullable="false" />
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="BajasArticulos" Relationship="ModeloDatos.StockBajaArticulo" FromRole="Stock" ToRole="BajaArticulo" />
+  </EntityType>
+  <Association Name="DepositoStock">
+    <End Type="ModeloDatos.Deposito" Role="Deposito" Multiplicity="1" />
+    <End Type="ModeloDatos.Stock" Role="Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deposito">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="DepositoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloStock">
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="1" />
+    <End Type="ModeloDatos.Stock" Role="Stock" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="BajaArticulo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Stock" Relationship="ModeloDatos.StockBajaArticulo" FromRole="BajaArticulo" ToRole="Stock" />
+    <Property Name="StockId" Type="Int64" Nullable="false" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Observacion" Type="String" Nullable="false" MaxLength="400" />
+  </EntityType>
+  <Association Name="StockBajaArticulo">
+    <End Type="ModeloDatos.Stock" Role="Stock" Multiplicity="1" />
+    <End Type="ModeloDatos.BajaArticulo" Role="BajaArticulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stock">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BajaArticulo">
+        <PropertyRef Name="StockId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ListaPrecioConfiguracion">
+    <End Type="ModeloDatos.ListaPrecio" Role="ListaPrecio" Multiplicity="1" />
+    <End Type="ModeloDatos.Configuracion" Role="Configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListaPrecio">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="ListaPrecioPorDefectoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepositoConfiguracion">
+    <End Type="ModeloDatos.Deposito" Role="Deposito" Multiplicity="1" />
+    <End Type="ModeloDatos.Configuracion" Role="Configuracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deposito">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="DepositoPorDefectoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Proveedor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RazonSocial" Type="String" Nullable="false" />
+    <Property Name="Domicilio" Type="String" Nullable="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" />
+    <NavigationProperty Name="CondicionIva" Relationship="ModeloDatos.CondicionIvaProveedor" FromRole="Proveedor" ToRole="CondicionIva" />
+    <Property Name="CondicionIvaId" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="CuentasCorrientesProveedores" Relationship="ModeloDatos.ProveedorCuentaCorrienteProveedor" FromRole="Proveedor" ToRole="CuentaCorrienteProveedor" />
+    <NavigationProperty Name="Compras" Relationship="ModeloDatos.ProveedorCompra" FromRole="Proveedor" ToRole="Compra" />
+  </EntityType>
+  <Association Name="CondicionIvaProveedor">
+    <End Type="ModeloDatos.CondicionIva" Role="CondicionIva" Multiplicity="1" />
+    <End Type="ModeloDatos.Proveedor" Role="Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionIva">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Proveedor">
+        <PropertyRef Name="CondicionIvaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CuentaCorrienteProveedor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Proveedor" Relationship="ModeloDatos.ProveedorCuentaCorrienteProveedor" FromRole="CuentaCorrienteProveedor" ToRole="Proveedor" />
+    <Property Name="ProveedorId" Type="Int64" Nullable="false" />
+    <Property Name="TipoMovimiento" Type="ModeloDatos.TipoMovimiento" Nullable="false" />
+    <Property Name="Monto" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="400" />
+  </EntityType>
+  <Association Name="ProveedorCuentaCorrienteProveedor">
+    <End Type="ModeloDatos.Proveedor" Role="Proveedor" Multiplicity="1" />
+    <End Type="ModeloDatos.CuentaCorrienteProveedor" Role="CuentaCorrienteProveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CuentaCorrienteProveedor">
+        <PropertyRef Name="ProveedorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Compra" BaseType="ModeloDatos.Comprobante">
+    <NavigationProperty Name="Proveedor" Relationship="ModeloDatos.ProveedorCompra" FromRole="Compra" ToRole="Proveedor" />
+    <Property Name="ProveedorId" Type="Int64" Nullable="false" />
+  </EntityType>
+  <Association Name="ProveedorCompra">
+    <End Type="ModeloDatos.Proveedor" Role="Proveedor" Multiplicity="1" />
+    <End Type="ModeloDatos.Compra" Role="Compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Compra">
+        <PropertyRef Name="ProveedorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaListaPrecio">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.ListaPrecio" Role="ListaPrecio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ListaPrecio">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaArticulo">
+    <End Type="ModeloDatos.Empresa" Role="Empresa" Multiplicity="1" />
+    <End Type="ModeloDatos.Articulo" Role="Articulo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

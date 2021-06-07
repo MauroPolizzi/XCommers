@@ -1,0 +1,1236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10D3C713-090B-413D-87E6-178E81D706A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XCommerce</RootNamespace>
+    <AssemblyName>XCommerce</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccesoDatos\Articulo.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\BajaArticulo.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Banco.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Caja.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Cliente.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Compra.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Comprobante.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\CondicionIva.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Configuracion.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\CuentaCorriente.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\CuentaCorrienteProveedor.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Delivery.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Deposito.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\DetalleCaja.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\DetalleComprobante.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Empleado.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Empresa.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\EstadoDelivery.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\EstadoMesa.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\EstadoSalon.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Factura.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\FormaPago.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\FormaPagoCheque.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\FormaPagoCuentaCorriente.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\FormaPagoEfectivo.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\FormaPagoTarjeta.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Formulario.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Ingrediente.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\ListaPrecio.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Marca.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Mesa.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\ModeloDatos.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloDatos.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\ModeloDatos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\ModeloDatos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloDatos.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Movimiento.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Perfil.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Persona.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\PlanTarjeta.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Precio.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Proveedor.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Rubro.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Sala.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Salon.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Stock.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\SubRubro.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Tarjeta.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\TipoArticulo.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\TipoComprobante.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\TipoFormaPago.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\TipoMovimiento.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\TipoPago.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AccesoDatos\Usuario.cs">
+      <DependentUpon>ModeloDatos.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Clases\Constante.cs" />
+    <Compile Include="Base\Formularios\FormularioAbm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioAbm.designer.cs">
+      <DependentUpon>FormularioAbm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioAsignarUnObjeto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioAsignarUnObjeto.designer.cs">
+      <DependentUpon>FormularioAsignarUnObjeto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioBase.designer.cs">
+      <DependentUpon>FormularioBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioConsulta.designer.cs">
+      <DependentUpon>FormularioConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioConsultaConControles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioConsultaConControles.designer.cs">
+      <DependentUpon>FormularioConsultaConControles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioConsultaConDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\Formularios\FormularioConsultaConDetalle.designer.cs">
+      <DependentUpon>FormularioConsultaConDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\Helpers\Color.cs" />
+    <Compile Include="Base\Clases\ConstanteSeguridad.cs" />
+    <Compile Include="Base\Clases\ControlObligatorioDto.cs" />
+    <Compile Include="Base\Helpers\Encriptar.cs" />
+    <Compile Include="Base\Helpers\FiltroArticuloVenta.cs" />
+    <Compile Include="Base\Helpers\Identidad.cs" />
+    <Compile Include="Base\Helpers\Imagen.cs" />
+    <Compile Include="Base\Helpers\Mensaje.cs" />
+    <Compile Include="Base\Helpers\TipoComprobante.cs" />
+    <Compile Include="Base\Helpers\TipoOperacion.cs" />
+    <Compile Include="Base\Helpers\Validar.cs" />
+    <Compile Include="Core\Controles\ctrolArticulo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolArticulo.Designer.cs">
+      <DependentUpon>ctrolArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolMesa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolMesa.Designer.cs">
+      <DependentUpon>ctrolMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolRegistroDelivery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolRegistroDelivery.Designer.cs">
+      <DependentUpon>ctrolRegistroDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\RubroButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\RubroButton.Designer.cs">
+      <DependentUpon>RubroButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\FormulariosVarios\fAbrirMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\FormulariosVarios\fAbrirMesa.Designer.cs">
+      <DependentUpon>fAbrirMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\FormulariosVarios\fControlArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\FormulariosVarios\fControlArticulos.Designer.cs">
+      <DependentUpon>fControlArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\FormulariosVarios\fListaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\FormulariosVarios\fListaArticulos.Designer.cs">
+      <DependentUpon>fListaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\PrimerAcceso\FormularioPrimerAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\PrimerAcceso\FormularioPrimerAcceso.Designer.cs">
+      <DependentUpon>FormularioPrimerAcceso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\PrimerAcceso\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\PrimerAcceso\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00009_QuitarEmpleadoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00009_QuitarEmpleadoEmpresa.Designer.cs">
+      <DependentUpon>_00009_QuitarEmpleadoEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00008_AsignarEmpleadoEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00008_AsignarEmpleadoEmpresa.Designer.cs">
+      <DependentUpon>_00008_AsignarEmpleadoEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolEmpleadoLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolEmpleadoLogin.designer.cs">
+      <DependentUpon>ctrolEmpleadoLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolFoto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolFoto.designer.cs">
+      <DependentUpon>ctrolFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolGrillaAsignarConBusqueda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolGrillaAsignarConBusqueda.designer.cs">
+      <DependentUpon>ctrolGrillaAsignarConBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolTipoVista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controles\ctrolTipoVista.designer.cs">
+      <DependentUpon>ctrolTipoVista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00000_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00000_Login.Designer.cs">
+      <DependentUpon>_00000_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00001_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00001_Empleado.Designer.cs">
+      <DependentUpon>_00001_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00002_ABM_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00002_ABM_Empleado.Designer.cs">
+      <DependentUpon>_00002_ABM_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00003_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00003_Usuario.Designer.cs">
+      <DependentUpon>_00003_Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00004_CondicionDeIva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00004_CondicionDeIva.Designer.cs">
+      <DependentUpon>_00004_CondicionDeIva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00005_ABM_CondicionDeIva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00005_ABM_CondicionDeIva.Designer.cs">
+      <DependentUpon>_00005_ABM_CondicionDeIva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00006_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00006_Empresa.Designer.cs">
+      <DependentUpon>_00006_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00007_ABM_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00007_ABM_Empresa.Designer.cs">
+      <DependentUpon>_00007_ABM_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00010_EmpresaParaTrabajar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00010_EmpresaParaTrabajar.Designer.cs">
+      <DependentUpon>_00010_EmpresaParaTrabajar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00011_Sala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00011_Sala.Designer.cs">
+      <DependentUpon>_00011_Sala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00012_ABM_Sala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00012_ABM_Sala.Designer.cs">
+      <DependentUpon>_00012_ABM_Sala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00014_ABM_Mesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00014_ABM_Mesa.Designer.cs">
+      <DependentUpon>_00014_ABM_Mesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00013_Mesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00013_Mesa.Designer.cs">
+      <DependentUpon>_00013_Mesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00015_VentaSalon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00015_VentaSalon.Designer.cs">
+      <DependentUpon>_00015_VentaSalon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00016_PuntoVentaPorMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00016_PuntoVentaPorMesa.Designer.cs">
+      <DependentUpon>_00016_PuntoVentaPorMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00017_Delivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00017_Delivery.Designer.cs">
+      <DependentUpon>_00017_Delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00018_Formulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00018_Formulario.Designer.cs">
+      <DependentUpon>_00018_Formulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00019_Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00019_Perfil.Designer.cs">
+      <DependentUpon>_00019_Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00020_ABM_Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00020_ABM_Perfil.Designer.cs">
+      <DependentUpon>_00020_ABM_Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00021_AsignarUsuarioPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00021_AsignarUsuarioPerfil.Designer.cs">
+      <DependentUpon>_00021_AsignarUsuarioPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00022_QuitarUsuarioPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00022_QuitarUsuarioPerfil.Designer.cs">
+      <DependentUpon>_00022_QuitarUsuarioPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00023_AsignarFormularioPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00023_AsignarFormularioPerfil.Designer.cs">
+      <DependentUpon>_00023_AsignarFormularioPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00024_QuitarFormularioPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00024_QuitarFormularioPerfil.Designer.cs">
+      <DependentUpon>_00024_QuitarFormularioPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00025_CambiarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00025_CambiarPassword.Designer.cs">
+      <DependentUpon>_00025_CambiarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00026_TipoComprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00026_TipoComprobante.Designer.cs">
+      <DependentUpon>_00026_TipoComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00027_ABM_TipoComprobante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00027_ABM_TipoComprobante.Designer.cs">
+      <DependentUpon>_00027_ABM_TipoComprobante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00028_Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00028_Marca.Designer.cs">
+      <DependentUpon>_00028_Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00029_ABM_Marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00029_ABM_Marca.Designer.cs">
+      <DependentUpon>_00029_ABM_Marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00030_Rubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00030_Rubro.Designer.cs">
+      <DependentUpon>_00030_Rubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00031_ABM_Rubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00031_ABM_Rubro.Designer.cs">
+      <DependentUpon>_00031_ABM_Rubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00032_SubRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00032_SubRubro.Designer.cs">
+      <DependentUpon>_00032_SubRubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00033_ABM_SubRubro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00033_ABM_SubRubro.Designer.cs">
+      <DependentUpon>_00033_ABM_SubRubro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00034_Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00034_Articulo.Designer.cs">
+      <DependentUpon>_00034_Articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00035_ABM_Articulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00035_ABM_Articulo.Designer.cs">
+      <DependentUpon>_00035_ABM_Articulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00036_ConfiguracionSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00036_ConfiguracionSistema.Designer.cs">
+      <DependentUpon>_00036_ConfiguracionSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00037_Deposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00037_Deposito.Designer.cs">
+      <DependentUpon>_00037_Deposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00038_ABM_Deposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00038_ABM_Deposito.Designer.cs">
+      <DependentUpon>_00038_ABM_Deposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00039_ListaPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00039_ListaPrecio.Designer.cs">
+      <DependentUpon>_00039_ListaPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00040_ABM_ListaPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00040_ABM_ListaPrecio.Designer.cs">
+      <DependentUpon>_00040_ABM_ListaPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00041_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00041_Cliente.Designer.cs">
+      <DependentUpon>_00041_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00042_ABM_Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00042_ABM_Cliente.Designer.cs">
+      <DependentUpon>_00042_ABM_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00043_AgregarStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00043_AgregarStock.Designer.cs">
+      <DependentUpon>_00043_AgregarStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00044_Deposito_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00044_Deposito_Detalle.Designer.cs">
+      <DependentUpon>_00044_Deposito_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00045_Kiosco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00045_Kiosco.Designer.cs">
+      <DependentUpon>_00045_Kiosco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00046_Precio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00046_Precio.Designer.cs">
+      <DependentUpon>_00046_Precio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00047_ABM_Precio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00047_ABM_Precio.Designer.cs">
+      <DependentUpon>_00047_ABM_Precio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00048_CuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00048_CuentaCorriente.Designer.cs">
+      <DependentUpon>_00048_CuentaCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00049_Pagar_CtaCte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00049_Pagar_CtaCte.Designer.cs">
+      <DependentUpon>_00049_Pagar_CtaCte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00050_ConsultaFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00050_ConsultaFacturas.Designer.cs">
+      <DependentUpon>_00050_ConsultaFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00051_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00051_Proveedor.Designer.cs">
+      <DependentUpon>_00051_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00052_AMB_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00052_AMB_Proveedor.Designer.cs">
+      <DependentUpon>_00052_AMB_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00053_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00053_Tarjeta.Designer.cs">
+      <DependentUpon>_00053_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00054_ABM_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00054_ABM_Tarjeta.Designer.cs">
+      <DependentUpon>_00054_ABM_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00055_PlanTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00055_PlanTarjeta.Designer.cs">
+      <DependentUpon>_00055_PlanTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00056_ABM_PlanTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00056_ABM_PlanTarjeta.Designer.cs">
+      <DependentUpon>_00056_ABM_PlanTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00057_Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00057_Banco.Designer.cs">
+      <DependentUpon>_00057_Banco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00058_ABM_Banco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00058_ABM_Banco.Designer.cs">
+      <DependentUpon>_00058_ABM_Banco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00059_AbrirCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00059_AbrirCaja.Designer.cs">
+      <DependentUpon>_00059_AbrirCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00060_CerrarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00060_CerrarCaja.Designer.cs">
+      <DependentUpon>_00060_CerrarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00061_ConsultarCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00061_ConsultarCaja.Designer.cs">
+      <DependentUpon>_00061_ConsultarCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00062_Movimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00062_Movimientos.Designer.cs">
+      <DependentUpon>_00062_Movimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00063_Comprobantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00063_Comprobantes.Designer.cs">
+      <DependentUpon>_00063_Comprobantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\_00064_FormaPagoCtaCte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Core\_00064_FormaPagoCtaCte.Designer.cs">
+      <DependentUpon>_00064_FormaPagoCtaCte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogicaNegocio\Articulo\ArticuloServicio.cs" />
+    <Compile Include="LogicaNegocio\Articulo\DTOs\ArticuloDto.cs" />
+    <Compile Include="LogicaNegocio\Articulo\DTOs\StockDto.cs" />
+    <Compile Include="LogicaNegocio\Banco\BancoServicio.cs" />
+    <Compile Include="LogicaNegocio\Banco\DTOs\BancoDto.cs" />
+    <Compile Include="LogicaNegocio\Caja\CajaServicios.cs" />
+    <Compile Include="LogicaNegocio\Caja\DTOs\CajaDto.cs" />
+    <Compile Include="LogicaNegocio\Cliente\ClienteServicio.cs" />
+    <Compile Include="LogicaNegocio\Cliente\DTOs\ClienteDto.cs" />
+    <Compile Include="LogicaNegocio\ComprobanteDetalle\ComprobanteDetalleServicio.cs" />
+    <Compile Include="LogicaNegocio\ComprobanteDetalle\DTOs\ComprobanteDetalleDto.cs" />
+    <Compile Include="LogicaNegocio\ComprobanteDetalle\DTOs\listaDetalleDto.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\ComprobanteServicio.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\Delivery\DeliveryServicios.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\DTOs\ComprobanteDto.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\Factura\DTOs\ComprobanteFacturaDto.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\Delivery\DTOs\DeliveryDto.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\DTOs\ItemDto.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\Salon\DTOs\SalonDto.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\Factura\FacturaServicios.cs" />
+    <Compile Include="LogicaNegocio\Comprobante\Salon\SalonServicios.cs" />
+    <Compile Include="LogicaNegocio\CondicionIva\CondicionIvaServicio.cs" />
+    <Compile Include="LogicaNegocio\CondicionIva\DTOs\CondicionIvaDto.cs" />
+    <Compile Include="LogicaNegocio\Configuracion\ConfiguracionServicio.cs" />
+    <Compile Include="LogicaNegocio\Configuracion\DTOs\ConfiguracionDto.cs" />
+    <Compile Include="LogicaNegocio\CuentaCorrienteProveedor\CtaCteProveedorServicios.cs" />
+    <Compile Include="LogicaNegocio\CuentaCorrienteProveedor\DTOs\CtaCteProveedorDto.cs" />
+    <Compile Include="LogicaNegocio\CuentaCorriente\CuentaCorrienteServicios.cs" />
+    <Compile Include="LogicaNegocio\CuentaCorriente\DTOs\CuentaCorrienteDto.cs" />
+    <Compile Include="LogicaNegocio\Deposito\DepositoServicio.cs" />
+    <Compile Include="LogicaNegocio\Deposito\DTOs\DepositoDto.cs" />
+    <Compile Include="LogicaNegocio\Empleado\DTOs\EmpleadoDto.cs" />
+    <Compile Include="LogicaNegocio\Empleado\EmpleadoServicio.cs" />
+    <Compile Include="LogicaNegocio\EmpresaEmpleado\Clases\EmpresaEmpleadoCompare.cs" />
+    <Compile Include="LogicaNegocio\EmpresaEmpleado\EmpresaEmpleadoServicio.cs" />
+    <Compile Include="LogicaNegocio\Empresa\DTOs\EmpresaDto.cs" />
+    <Compile Include="LogicaNegocio\Empresa\EmpresaServicio.cs" />
+    <Compile Include="LogicaNegocio\FormaPago\CuentaCte\CtaCteServicio.cs" />
+    <Compile Include="LogicaNegocio\FormaPago\CuentaCte\DTOs\CtaCteDto.cs" />
+    <Compile Include="LogicaNegocio\FormaPago\Efectivo\DTOs\EfectivoDto.cs" />
+    <Compile Include="LogicaNegocio\FormaPago\Efectivo\EfectivoServicio.cs" />
+    <Compile Include="LogicaNegocio\FormularioPerfil\DTOs\FormularioPerfilCompare.cs" />
+    <Compile Include="LogicaNegocio\FormularioPerfil\DTOs\FormularioPerfilDto.cs" />
+    <Compile Include="LogicaNegocio\FormularioPerfil\FormularioPerfilServicio.cs" />
+    <Compile Include="LogicaNegocio\ListaPrecio\DTOs\ListaPrecioDto.cs" />
+    <Compile Include="LogicaNegocio\ListaPrecio\ListaPrecioServicio.cs" />
+    <Compile Include="LogicaNegocio\Marca\DTOs\MarcaDto.cs" />
+    <Compile Include="LogicaNegocio\Marca\MarcaServicio.cs" />
+    <Compile Include="LogicaNegocio\Movimineto\DTOs\MovimientoDto.cs" />
+    <Compile Include="LogicaNegocio\Movimineto\MovimientoServicio.cs" />
+    <Compile Include="LogicaNegocio\Precio\DTOs\PrecioDto.cs" />
+    <Compile Include="LogicaNegocio\Precio\PrecioServicio.cs" />
+    <Compile Include="LogicaNegocio\PrimerIngresoSistema\ServicioInicio.cs" />
+    <Compile Include="LogicaNegocio\Proveedor\DTOs\ProveedorDto.cs" />
+    <Compile Include="LogicaNegocio\Proveedor\ProveedorServicios.cs" />
+    <Compile Include="LogicaNegocio\Rubro\DTOs\RubroDto.cs" />
+    <Compile Include="LogicaNegocio\Rubro\RubroServicio.cs" />
+    <Compile Include="LogicaNegocio\SubRubro\DTOs\SubRubroDto.cs" />
+    <Compile Include="LogicaNegocio\SubRubro\SubRubroServicio.cs" />
+    <Compile Include="LogicaNegocio\TarjetaPlan\DTOs\PlanTarjetaDto.cs" />
+    <Compile Include="LogicaNegocio\TarjetaPlan\PlanTarjetaServicio.cs" />
+    <Compile Include="LogicaNegocio\Tarjeta\DTOs\TarjetaDto.cs" />
+    <Compile Include="LogicaNegocio\Tarjeta\TarjetaServicios.cs" />
+    <Compile Include="LogicaNegocio\TipoComprobante\DTOs\TipoComprobanteDto.cs" />
+    <Compile Include="LogicaNegocio\TipoComprobante\TipoComprobanteServicio.cs" />
+    <Compile Include="LogicaNegocio\UsuarioPerfil\DTOs\UsuarioPerfilCompare.cs" />
+    <Compile Include="LogicaNegocio\UsuarioPerfil\UsuarioPerfilServicio.cs" />
+    <Compile Include="LogicaNegocio\Formulario\DTOs\FormularioDto.cs" />
+    <Compile Include="LogicaNegocio\Formulario\FormularioServicio.cs" />
+    <Compile Include="LogicaNegocio\Mesa\DTOs\MesaDto.cs" />
+    <Compile Include="LogicaNegocio\Mesa\MesaServicio.cs" />
+    <Compile Include="LogicaNegocio\Perfil\DTOs\PerfilDto.cs" />
+    <Compile Include="LogicaNegocio\Perfil\PerfilServicio.cs" />
+    <Compile Include="LogicaNegocio\Sala\DTOs\SalaDto.cs" />
+    <Compile Include="LogicaNegocio\Sala\SalaServicio.cs" />
+    <Compile Include="LogicaNegocio\Seguridad\SeguridadServicio.cs" />
+    <Compile Include="LogicaNegocio\UsuarioPerfil\DTOs\UsuarioPerfilDto.cs" />
+    <Compile Include="LogicaNegocio\Usuario\DTOs\UsuarioDto.cs" />
+    <Compile Include="LogicaNegocio\Usuario\UsuarioServicio.cs" />
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base\Formularios\FormularioAbm.resx">
+      <DependentUpon>FormularioAbm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Formularios\FormularioAsignarUnObjeto.resx">
+      <DependentUpon>FormularioAsignarUnObjeto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Formularios\FormularioBase.resx">
+      <DependentUpon>FormularioBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Formularios\FormularioConsulta.resx">
+      <DependentUpon>FormularioConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Formularios\FormularioConsultaConControles.resx">
+      <DependentUpon>FormularioConsultaConControles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\Formularios\FormularioConsultaConDetalle.resx">
+      <DependentUpon>FormularioConsultaConDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolArticulo.resx">
+      <DependentUpon>ctrolArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolMesa.resx">
+      <DependentUpon>ctrolMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolRegistroDelivery.resx">
+      <DependentUpon>ctrolRegistroDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\FormulariosVarios\fAbrirMesa.resx">
+      <DependentUpon>fAbrirMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\FormulariosVarios\fControlArticulos.resx">
+      <DependentUpon>fControlArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\FormulariosVarios\fListaArticulos.resx">
+      <DependentUpon>fListaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\PrimerAcceso\FormularioPrimerAcceso.resx">
+      <DependentUpon>FormularioPrimerAcceso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\PrimerAcceso\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00009_QuitarEmpleadoEmpresa.resx">
+      <DependentUpon>_00009_QuitarEmpleadoEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00008_AsignarEmpleadoEmpresa.resx">
+      <DependentUpon>_00008_AsignarEmpleadoEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolEmpleadoLogin.resx">
+      <DependentUpon>ctrolEmpleadoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolFoto.resx">
+      <DependentUpon>ctrolFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolGrillaAsignarConBusqueda.resx">
+      <DependentUpon>ctrolGrillaAsignarConBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\Controles\ctrolTipoVista.resx">
+      <DependentUpon>ctrolTipoVista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00000_Login.resx">
+      <DependentUpon>_00000_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00001_Empleado.resx">
+      <DependentUpon>_00001_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00002_ABM_Empleado.resx">
+      <DependentUpon>_00002_ABM_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00003_Usuario.resx">
+      <DependentUpon>_00003_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00004_CondicionDeIva.resx">
+      <DependentUpon>_00004_CondicionDeIva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00005_ABM_CondicionDeIva.resx">
+      <DependentUpon>_00005_ABM_CondicionDeIva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00006_Empresa.resx">
+      <DependentUpon>_00006_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00007_ABM_Empresa.resx">
+      <DependentUpon>_00007_ABM_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00010_EmpresaParaTrabajar.resx">
+      <DependentUpon>_00010_EmpresaParaTrabajar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00011_Sala.resx">
+      <DependentUpon>_00011_Sala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00012_ABM_Sala.resx">
+      <DependentUpon>_00012_ABM_Sala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00013_Mesa.resx">
+      <DependentUpon>_00013_Mesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00014_ABM_Mesa.resx">
+      <DependentUpon>_00014_ABM_Mesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00015_VentaSalon.resx">
+      <DependentUpon>_00015_VentaSalon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00016_PuntoVentaPorMesa.resx">
+      <DependentUpon>_00016_PuntoVentaPorMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00017_Delivery.resx">
+      <DependentUpon>_00017_Delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00018_Formulario.resx">
+      <DependentUpon>_00018_Formulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00019_Perfil.resx">
+      <DependentUpon>_00019_Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00020_ABM_Perfil.resx">
+      <DependentUpon>_00020_ABM_Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00021_AsignarUsuarioPerfil.resx">
+      <DependentUpon>_00021_AsignarUsuarioPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00022_QuitarUsuarioPerfil.resx">
+      <DependentUpon>_00022_QuitarUsuarioPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00023_AsignarFormularioPerfil.resx">
+      <DependentUpon>_00023_AsignarFormularioPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00024_QuitarFormularioPerfil.resx">
+      <DependentUpon>_00024_QuitarFormularioPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00025_CambiarPassword.resx">
+      <DependentUpon>_00025_CambiarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00026_TipoComprobante.resx">
+      <DependentUpon>_00026_TipoComprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00027_ABM_TipoComprobante.resx">
+      <DependentUpon>_00027_ABM_TipoComprobante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00028_Marca.resx">
+      <DependentUpon>_00028_Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00029_ABM_Marca.resx">
+      <DependentUpon>_00029_ABM_Marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00030_Rubro.resx">
+      <DependentUpon>_00030_Rubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00031_ABM_Rubro.resx">
+      <DependentUpon>_00031_ABM_Rubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00032_SubRubro.resx">
+      <DependentUpon>_00032_SubRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00033_ABM_SubRubro.resx">
+      <DependentUpon>_00033_ABM_SubRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00034_Articulo.resx">
+      <DependentUpon>_00034_Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00035_ABM_Articulo.resx">
+      <DependentUpon>_00035_ABM_Articulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00036_ConfiguracionSistema.resx">
+      <DependentUpon>_00036_ConfiguracionSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00037_Deposito.resx">
+      <DependentUpon>_00037_Deposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00038_ABM_Deposito.resx">
+      <DependentUpon>_00038_ABM_Deposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00039_ListaPrecio.resx">
+      <DependentUpon>_00039_ListaPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00040_ABM_ListaPrecio.resx">
+      <DependentUpon>_00040_ABM_ListaPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00041_Cliente.resx">
+      <DependentUpon>_00041_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00042_ABM_Cliente.resx">
+      <DependentUpon>_00042_ABM_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00043_AgregarStock.resx">
+      <DependentUpon>_00043_AgregarStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00044_Deposito_Detalle.resx">
+      <DependentUpon>_00044_Deposito_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00045_Kiosco.resx">
+      <DependentUpon>_00045_Kiosco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00047_ABM_Precio.resx">
+      <DependentUpon>_00047_ABM_Precio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00048_CuentaCorriente.resx">
+      <DependentUpon>_00048_CuentaCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00049_Pagar_CtaCte.resx">
+      <DependentUpon>_00049_Pagar_CtaCte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00050_ConsultaFacturas.resx">
+      <DependentUpon>_00050_ConsultaFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00051_Proveedor.resx">
+      <DependentUpon>_00051_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00052_AMB_Proveedor.resx">
+      <DependentUpon>_00052_AMB_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00053_Tarjeta.resx">
+      <DependentUpon>_00053_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00054_ABM_Tarjeta.resx">
+      <DependentUpon>_00054_ABM_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00055_PlanTarjeta.resx">
+      <DependentUpon>_00055_PlanTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00056_ABM_PlanTarjeta.resx">
+      <DependentUpon>_00056_ABM_PlanTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00057_Banco.resx">
+      <DependentUpon>_00057_Banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00058_ABM_Banco.resx">
+      <DependentUpon>_00058_ABM_Banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00059_AbrirCaja.resx">
+      <DependentUpon>_00059_AbrirCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00060_CerrarCaja.resx">
+      <DependentUpon>_00060_CerrarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00061_ConsultarCaja.resx">
+      <DependentUpon>_00061_ConsultarCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00062_Movimientos.resx">
+      <DependentUpon>_00062_Movimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00063_Comprobantes.resx">
+      <DependentUpon>_00063_Comprobantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\_00064_FormaPagoCtaCte.resx">
+      <DependentUpon>_00064_FormaPagoCtaCte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="AccesoDatos\ModeloDatos.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloDatos.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AccesoDatos\ModeloDatos.edmx.diagram">
+      <DependentUpon>ModeloDatos.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AccesoDatos\ModeloDatos.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModeloDatos.Context.cs</LastGenOutput>
+      <DependentUpon>ModeloDatos.edmx</DependentUpon>
+    </Content>
+    <Content Include="AccesoDatos\ModeloDatos.edmx.sql" />
+    <Content Include="AccesoDatos\ModeloDatos.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModeloDatos.cs</LastGenOutput>
+      <DependentUpon>ModeloDatos.edmx</DependentUpon>
+    </Content>
+    <Content Include="Base\Varios\Boton Agregar.txt" />
+    <Content Include="Base\Varios\Agregar Formulario a un Panel.txt" />
+    <Content Include="Contenido\Imagenes\Actualizar.png" />
+    <Content Include="Contenido\Imagenes\Actualizar5.png" />
+    <Content Include="Contenido\Imagenes\Agenda.png" />
+    <Content Include="Contenido\Imagenes\Agregar.png" />
+    <Content Include="Contenido\Imagenes\Agregar2.png" />
+    <Content Include="Contenido\Imagenes\Borrar.png" />
+    <Content Include="Contenido\Imagenes\Buscar.png" />
+    <Content Include="Contenido\Imagenes\CajaRegistradora.png" />
+    <Content Include="Contenido\Imagenes\Camara.png" />
+    <Content Include="Contenido\Imagenes\Camara2.png" />
+    <Content Include="Contenido\Imagenes\Candado.png" />
+    <Content Include="Contenido\Imagenes\CarritoCompra.png" />
+    <Content Include="Contenido\Imagenes\Casa2.png" />
+    <Content Include="Contenido\Imagenes\Configuracion.png" />
+    <Content Include="Contenido\Imagenes\Controles.png" />
+    <Content Include="Contenido\Imagenes\credencial.png" />
+    <Content Include="Contenido\Imagenes\Editar.png" />
+    <Content Include="Contenido\Imagenes\FondoFormularioNegro2.jpg" />
+    <Content Include="Contenido\Imagenes\Formularios.png" />
+    <Content Include="Contenido\Imagenes\Grabar.png" />
+    <Content Include="Contenido\Imagenes\Guardar.png" />
+    <Content Include="Contenido\Imagenes\if_alarm-clock_blue_68659.png" />
+    <Content Include="Contenido\Imagenes\if_application_basic_blue_69429.png" />
+    <Content Include="Contenido\Imagenes\if_archive_blue_68662.png" />
+    <Content Include="Contenido\Imagenes\if_arrow-left_basic_blue_69432.png" />
+    <Content Include="Contenido\Imagenes\if_arrow-right_basic_blue_69433 %281%29.png" />
+    <Content Include="Contenido\Imagenes\if_arrow-right_basic_blue_69433.png" />
+    <Content Include="Contenido\Imagenes\if_arrow-up_basic_blue_69434.png" />
+    <Content Include="Contenido\Imagenes\if_bell_basic_blue_69439.png" />
+    <Content Include="Contenido\Imagenes\if_bin_blue_68672.png" />
+    <Content Include="Contenido\Imagenes\if_briefcase_basic_blue_69444.png" />
+    <Content Include="Contenido\Imagenes\if_button-cross_basic_blue_69449.png" />
+    <Content Include="Contenido\Imagenes\if_button-remove_basic_blue_69456.png" />
+    <Content Include="Contenido\Imagenes\if_button-stop_basic_blue_69461.png" />
+    <Content Include="Contenido\Imagenes\if_calculator_basic_blue_69463.png" />
+    <Content Include="Contenido\Imagenes\if_camera_basic_blue_69466.png" />
+    <Content Include="Contenido\Imagenes\if_chart-area-up_basic_blue_69468.png" />
+    <Content Include="Contenido\Imagenes\if_chart-pie_basic_blue_69472.png" />
+    <Content Include="Contenido\Imagenes\if_database_basic_blue_69482.png" />
+    <Content Include="Contenido\Imagenes\if_gears_basic_blue_69503.png" />
+    <Content Include="Contenido\Imagenes\if_gear_basic_blue_69502.png" />
+    <Content Include="Contenido\Imagenes\if_gift_basic_blue_69504.png" />
+    <Content Include="Contenido\Imagenes\if_inbox_basic_blue_69513.png" />
+    <Content Include="Contenido\Imagenes\if_information_basic_blue_69514.png" />
+    <Content Include="Contenido\Imagenes\if_key_basic_blue_69519.png" />
+    <Content Include="Contenido\Imagenes\if_Marker_1891030.png" />
+    <Content Include="Contenido\Imagenes\if_navigation-up-button_basic_blue_69547.png" />
+    <Content Include="Contenido\Imagenes\if_navigation-up_basic_blue_69546.png" />
+    <Content Include="Contenido\Imagenes\if_outbox_basic_blue_69550.png" />
+    <Content Include="Contenido\Imagenes\if_paint-bucket_basic_blue_69551.png" />
+    <Content Include="Contenido\Imagenes\if_paint-tube_basic_blue_69552.png" />
+    <Content Include="Contenido\Imagenes\if_paper-clip_blue_68786.png" />
+    <Content Include="Contenido\Imagenes\if_pipette_basic_blue_69557.png" />
+    <Content Include="Contenido\Imagenes\if_ruler_basic_blue_69567.png" />
+    <Content Include="Contenido\Imagenes\if_search_basic_blue_69571.png" />
+    <Content Include="Contenido\Imagenes\if_shopping-cart_basic_blue_69576.png" />
+    <Content Include="Contenido\Imagenes\if_site-map_basic_blue_69577.png" />
+    <Content Include="Contenido\Imagenes\if_toggle-expand-alt_basic_blue_69590.png" />
+    <Content Include="Contenido\Imagenes\if_wall_basic_blue_69603.png" />
+    <Content Include="Contenido\Imagenes\if_wrench_basic_blue_69615 %281%29.png" />
+    <Content Include="Contenido\Imagenes\if_wrench_basic_blue_69615.png" />
+    <Content Include="Contenido\Imagenes\if_zoom-out_basic_blue_69617.png" />
+    <Content Include="Contenido\Imagenes\Imagen.png" />
+    <Content Include="Contenido\Imagenes\ImagenFondo.png" />
+    <Content Include="Contenido\Imagenes\Impresora.png" />
+    <Content Include="Contenido\Imagenes\large_tiles.png" />
+    <Content Include="Contenido\Imagenes\Limpiar.png" />
+    <Content Include="Contenido\Imagenes\Limpiar2.png" />
+    <Content Include="Contenido\Imagenes\Limpiar3.png" />
+    <Content Include="Contenido\Imagenes\Limpiar4.png" />
+    <Content Include="Contenido\Imagenes\Lista.png" />
+    <Content Include="Contenido\Imagenes\list_bullets.png" />
+    <Content Include="Contenido\Imagenes\Login.png" />
+    <Content Include="Contenido\Imagenes\Login2.png" />
+    <Content Include="Contenido\Imagenes\Login3.png" />
+    <Content Include="Contenido\Imagenes\Logo.png" />
+    <Content Include="Contenido\Imagenes\Menu.png" />
+    <Content Include="Contenido\Imagenes\Moneda.png" />
+    <Content Include="Contenido\Imagenes\Mundo.png" />
+    <Content Include="Contenido\Imagenes\Nuevo.png" />
+    <Content Include="Contenido\Imagenes\Ojo.png" />
+    <Content Include="Contenido\Imagenes\Password.png" />
+    <None Include="Resources\icons8-expandir-80.png" />
+    <None Include="Resources\icons8-cheque-rebotado-50.png" />
+    <None Include="Resources\icons8-banco.png" />
+    <None Include="Resources\icons8-eliminar-carpeta-64.png" />
+    <None Include="Resources\icons8-agregar-carpeta-64.png" />
+    <None Include="Resources\icons8-eliminar-carpeta-16.png" />
+    <None Include="Resources\icons8-agregar-carpeta-16.png" />
+    <None Include="Resources\icons8-retire-del-administrador-2.png" />
+    <None Include="Resources\icons8-agregar-administrador.png" />
+    <None Include="Resources\icons8-monedas-3.png" />
+    <None Include="Resources\icons8-banco-2.png" />
+    <None Include="Resources\icons8-tarjetas-bancarias-2.png" />
+    <None Include="Resources\icons8-museo.png" />
+    <None Include="Resources\icons8-dinero-2.png" />
+    <None Include="Contenido\Imagenes\PlatoCubierto.png" />
+    <Content Include="Contenido\Imagenes\Presentacion.png" />
+    <Content Include="Contenido\Imagenes\Producto.png" />
+    <Content Include="Contenido\Imagenes\Quitar.png" />
+    <Content Include="Contenido\Imagenes\Quitar2.png" />
+    <Content Include="Contenido\Imagenes\Rehacer.png" />
+    <Content Include="Contenido\Imagenes\Salir.png" />
+    <Content Include="Contenido\Imagenes\search.png" />
+    <Content Include="Contenido\Imagenes\Semaforo.png" />
+    <Content Include="Contenido\Imagenes\SimboloAdminracion.png" />
+    <Content Include="Contenido\Imagenes\Telefono.png" />
+    <Content Include="Contenido\Imagenes\tenedor.png" />
+    <Content Include="Contenido\Imagenes\Usuario.png" />
+    <Content Include="Contenido\Imagenes\Usuarios.png" />
+    <Content Include="Contenido\Imagenes\Webcam.png" />
+    <Content Include="Contenido\Imagenes\WebCam2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LogicaNegocio\FormaPago\DTOs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

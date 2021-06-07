@@ -1,0 +1,1611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ModeloDatos.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModeloDatosStoreContainer">
+    <EntitySet Name="Personas" EntityType="ModeloDatos.Store.Personas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuarios" EntityType="ModeloDatos.Store.Usuarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Empresas" EntityType="ModeloDatos.Store.Empresas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CondicionIvas" EntityType="ModeloDatos.Store.CondicionIvas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Salas" EntityType="ModeloDatos.Store.Salas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Mesas" EntityType="ModeloDatos.Store.Mesas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Perfiles" EntityType="ModeloDatos.Store.Perfiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Formularios" EntityType="ModeloDatos.Store.Formularios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comprobantes" EntityType="ModeloDatos.Store.Comprobantes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetalleComprobantes" EntityType="ModeloDatos.Store.DetalleComprobantes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Articulos" EntityType="ModeloDatos.Store.Articulos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cajas" EntityType="ModeloDatos.Store.Cajas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TipoComprobantes" EntityType="ModeloDatos.Store.TipoComprobantes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DetalleCajas" EntityType="ModeloDatos.Store.DetalleCajas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Movimientos" EntityType="ModeloDatos.Store.Movimientos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Configuraciones" EntityType="ModeloDatos.Store.Configuraciones" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Marcas" EntityType="ModeloDatos.Store.Marcas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rubros" EntityType="ModeloDatos.Store.Rubros" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SubRubros" EntityType="ModeloDatos.Store.SubRubros" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ingredientes" EntityType="ModeloDatos.Store.Ingredientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormaPagos" EntityType="ModeloDatos.Store.FormaPagos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tarjetas" EntityType="ModeloDatos.Store.Tarjetas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PlanTarjetas" EntityType="ModeloDatos.Store.PlanTarjetas" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Bancos" EntityType="ModeloDatos.Store.Bancos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Precios" EntityType="ModeloDatos.Store.Precios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ListaPrecios" EntityType="ModeloDatos.Store.ListaPrecios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Depositos" EntityType="ModeloDatos.Store.Depositos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuentaCorrientes" EntityType="ModeloDatos.Store.CuentaCorrientes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Stocks" EntityType="ModeloDatos.Store.Stocks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BajasArticulos" EntityType="ModeloDatos.Store.BajasArticulos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Proveedores" EntityType="ModeloDatos.Store.Proveedores" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CuentaCorrienteProveedores" EntityType="ModeloDatos.Store.CuentaCorrienteProveedores" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Empleado" EntityType="ModeloDatos.Store.Personas_Empleado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Personas_Cliente" EntityType="ModeloDatos.Store.Personas_Cliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comprobantes_Salon" EntityType="ModeloDatos.Store.Comprobantes_Salon" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comprobantes_Delivery" EntityType="ModeloDatos.Store.Comprobantes_Delivery" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormaPagos_FormaPagoTarjeta" EntityType="ModeloDatos.Store.FormaPagos_FormaPagoTarjeta" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormaPagos_FormaPagoCheque" EntityType="ModeloDatos.Store.FormaPagos_FormaPagoCheque" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormaPagos_FormaPagoCuentaCorriente" EntityType="ModeloDatos.Store.FormaPagos_FormaPagoCuentaCorriente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comprobantes_Compra" EntityType="ModeloDatos.Store.Comprobantes_Compra" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Comprobantes_Factura" EntityType="ModeloDatos.Store.Comprobantes_Factura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FormaPagos_FormaPagoEfectivo" EntityType="ModeloDatos.Store.FormaPagos_FormaPagoEfectivo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EmpleadoEmpresa" EntityType="ModeloDatos.Store.EmpleadoEmpresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UsuarioPerfil" EntityType="ModeloDatos.Store.UsuarioPerfil" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PerfilFormulario" EntityType="ModeloDatos.Store.PerfilFormulario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="EmpleadoUsuario" Association="ModeloDatos.Store.EmpleadoUsuario">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="Usuario" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="CondicionIvaEmpresa" Association="ModeloDatos.Store.CondicionIvaEmpresa">
+      <End Role="CondicionIva" EntitySet="CondicionIvas" />
+      <End Role="Empresa" EntitySet="Empresas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpleadoEmpresa_Empleado" Association="ModeloDatos.Store.FK_EmpleadoEmpresa_Empleado">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="EmpleadoEmpresa" EntitySet="EmpleadoEmpresa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmpleadoEmpresa_Empresa" Association="ModeloDatos.Store.FK_EmpleadoEmpresa_Empresa">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="EmpleadoEmpresa" EntitySet="EmpleadoEmpresa" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaSala" Association="ModeloDatos.Store.EmpresaSala">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Sala" EntitySet="Salas" />
+    </AssociationSet>
+    <AssociationSet Name="SalaMesa" Association="ModeloDatos.Store.SalaMesa">
+      <End Role="Sala" EntitySet="Salas" />
+      <End Role="Mesa" EntitySet="Mesas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioPerfil_Usuario" Association="ModeloDatos.Store.FK_UsuarioPerfil_Usuario">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="UsuarioPerfil" EntitySet="UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsuarioPerfil_Perfil" Association="ModeloDatos.Store.FK_UsuarioPerfil_Perfil">
+      <End Role="Perfil" EntitySet="Perfiles" />
+      <End Role="UsuarioPerfil" EntitySet="UsuarioPerfil" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PerfilFormulario_Perfil" Association="ModeloDatos.Store.FK_PerfilFormulario_Perfil">
+      <End Role="Perfil" EntitySet="Perfiles" />
+      <End Role="PerfilFormulario" EntitySet="PerfilFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PerfilFormulario_Formulario" Association="ModeloDatos.Store.FK_PerfilFormulario_Formulario">
+      <End Role="Formulario" EntitySet="Formularios" />
+      <End Role="PerfilFormulario" EntitySet="PerfilFormulario" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaPerfil" Association="ModeloDatos.Store.EmpresaPerfil">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Perfil" EntitySet="Perfiles" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaComprobante" Association="ModeloDatos.Store.EmpresaComprobante">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioComprobante" Association="ModeloDatos.Store.UsuarioComprobante">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteComprobante" Association="ModeloDatos.Store.ClienteComprobante">
+      <End Role="Cliente" EntitySet="Personas_Cliente" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoComprobante_Salon" Association="ModeloDatos.Store.EmpleadoComprobante_Salon">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="Comprobante_Salon" EntitySet="Comprobantes_Salon" />
+    </AssociationSet>
+    <AssociationSet Name="MesaComprobante_Salon" Association="ModeloDatos.Store.MesaComprobante_Salon">
+      <End Role="Mesa" EntitySet="Mesas" />
+      <End Role="Comprobante_Salon" EntitySet="Comprobantes_Salon" />
+    </AssociationSet>
+    <AssociationSet Name="ComprobanteDetalleComprobante" Association="ModeloDatos.Store.ComprobanteDetalleComprobante">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="DetalleComprobante" EntitySet="DetalleComprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloDetalleComprobante" Association="ModeloDatos.Store.ArticuloDetalleComprobante">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="DetalleComprobante" EntitySet="DetalleComprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpleadoDelivery" Association="ModeloDatos.Store.EmpleadoDelivery">
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+      <End Role="Delivery" EntitySet="Comprobantes_Delivery" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioCajaApertura" Association="ModeloDatos.Store.UsuarioCaja">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Caja" EntitySet="Cajas" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioCajaCierre" Association="ModeloDatos.Store.UsuarioCajaCierre">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Caja" EntitySet="Cajas" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaCaja" Association="ModeloDatos.Store.EmpresaCaja">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Caja" EntitySet="Cajas" />
+    </AssociationSet>
+    <AssociationSet Name="TipoComprobanteComprobante" Association="ModeloDatos.Store.TipoComprobanteComprobante">
+      <End Role="TipoComprobante" EntitySet="TipoComprobantes" />
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="CajaDetalleCaja" Association="ModeloDatos.Store.CajaDetalleCaja">
+      <End Role="Caja" EntitySet="Cajas" />
+      <End Role="DetalleCaja" EntitySet="DetalleCajas" />
+    </AssociationSet>
+    <AssociationSet Name="ComprobanteMovimiento" Association="ModeloDatos.Store.ComprobanteMovimiento">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="Movimiento" EntitySet="Movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="CajaMovimiento" Association="ModeloDatos.Store.CajaMovimiento">
+      <End Role="Caja" EntitySet="Cajas" />
+      <End Role="Movimiento" EntitySet="Movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="UsuarioMovimiento" Association="ModeloDatos.Store.UsuarioMovimiento">
+      <End Role="Usuario" EntitySet="Usuarios" />
+      <End Role="Movimiento" EntitySet="Movimientos" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaConfiguracion" Association="ModeloDatos.Store.EmpresaConfiguracion">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <AssociationSet Name="TipoComprobanteConfiguracion" Association="ModeloDatos.Store.TipoComprobanteConfiguracion">
+      <End Role="TipoComprobante" EntitySet="TipoComprobantes" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <AssociationSet Name="MarcaArticulo" Association="ModeloDatos.Store.MarcaArticulo">
+      <End Role="Marca" EntitySet="Marcas" />
+      <End Role="Articulo" EntitySet="Articulos" />
+    </AssociationSet>
+    <AssociationSet Name="RubroSubRubro" Association="ModeloDatos.Store.RubroSubRubro">
+      <End Role="Rubro" EntitySet="Rubros" />
+      <End Role="SubRubro" EntitySet="SubRubros" />
+    </AssociationSet>
+    <AssociationSet Name="SubRubroArticulo" Association="ModeloDatos.Store.SubRubroArticulo">
+      <End Role="SubRubro" EntitySet="SubRubros" />
+      <End Role="Articulo" EntitySet="Articulos" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaTipoComprobante" Association="ModeloDatos.Store.EmpresaTipoComprobante">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="TipoComprobante" EntitySet="TipoComprobantes" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaRubro" Association="ModeloDatos.Store.EmpresaRubro">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Rubro" EntitySet="Rubros" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaMarca" Association="ModeloDatos.Store.EmpresaMarca">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Marca" EntitySet="Marcas" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloIngrediente" Association="ModeloDatos.Store.ArticuloIngrediente">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Ingrediente" EntitySet="Ingredientes" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloIngrediente1" Association="ModeloDatos.Store.ArticuloIngrediente1">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Ingrediente" EntitySet="Ingredientes" />
+    </AssociationSet>
+    <AssociationSet Name="TarjetaPlanTarjeta" Association="ModeloDatos.Store.TarjetaPlanTarjeta">
+      <End Role="Tarjeta" EntitySet="Tarjetas" />
+      <End Role="PlanTarjeta" EntitySet="PlanTarjetas" />
+    </AssociationSet>
+    <AssociationSet Name="PlanTarjetaFormaPagoTarjeta" Association="ModeloDatos.Store.PlanTarjetaFormaPagoTarjeta">
+      <End Role="PlanTarjeta" EntitySet="PlanTarjetas" />
+      <End Role="FormaPagoTarjeta" EntitySet="FormaPagos_FormaPagoTarjeta" />
+    </AssociationSet>
+    <AssociationSet Name="BancoFormaPagoCheque" Association="ModeloDatos.Store.BancoFormaPagoCheque">
+      <End Role="Banco" EntitySet="Bancos" />
+      <End Role="FormaPagoCheque" EntitySet="FormaPagos_FormaPagoCheque" />
+    </AssociationSet>
+    <AssociationSet Name="ComprobanteFormaPago" Association="ModeloDatos.Store.ComprobanteFormaPago">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="FormaPago" EntitySet="FormaPagos" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteFormaPagoCuentaCorriente" Association="ModeloDatos.Store.ClienteFormaPagoCuentaCorriente">
+      <End Role="Cliente" EntitySet="Personas_Cliente" />
+      <End Role="FormaPagoCuentaCorriente" EntitySet="FormaPagos_FormaPagoCuentaCorriente" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaPrecio" Association="ModeloDatos.Store.EmpresaPrecio">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Precio" EntitySet="Precios" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloPrecio" Association="ModeloDatos.Store.ArticuloPrecio">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Precio" EntitySet="Precios" />
+    </AssociationSet>
+    <AssociationSet Name="ListaPrecioPrecio" Association="ModeloDatos.Store.ListaPrecioPrecio">
+      <End Role="ListaPrecio" EntitySet="ListaPrecios" />
+      <End Role="Precio" EntitySet="Precios" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaDeposito" Association="ModeloDatos.Store.EmpresaDeposito">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Deposito" EntitySet="Depositos" />
+    </AssociationSet>
+    <AssociationSet Name="ClienteCuentaCorriente" Association="ModeloDatos.Store.ClienteCuentaCorriente">
+      <End Role="Cliente" EntitySet="Personas_Cliente" />
+      <End Role="CuentaCorriente" EntitySet="CuentaCorrientes" />
+    </AssociationSet>
+    <AssociationSet Name="DepositoStock" Association="ModeloDatos.Store.DepositoStock">
+      <End Role="Deposito" EntitySet="Depositos" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="ArticuloStock" Association="ModeloDatos.Store.ArticuloStock">
+      <End Role="Articulo" EntitySet="Articulos" />
+      <End Role="Stock" EntitySet="Stocks" />
+    </AssociationSet>
+    <AssociationSet Name="StockBajaArticulo" Association="ModeloDatos.Store.StockBajaArticulo">
+      <End Role="Stock" EntitySet="Stocks" />
+      <End Role="BajaArticulo" EntitySet="BajasArticulos" />
+    </AssociationSet>
+    <AssociationSet Name="ListaPrecioConfiguracion" Association="ModeloDatos.Store.ListaPrecioConfiguracion">
+      <End Role="ListaPrecio" EntitySet="ListaPrecios" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <AssociationSet Name="DepositoConfiguracion" Association="ModeloDatos.Store.DepositoConfiguracion">
+      <End Role="Deposito" EntitySet="Depositos" />
+      <End Role="Configuracion" EntitySet="Configuraciones" />
+    </AssociationSet>
+    <AssociationSet Name="CondicionIvaProveedor" Association="ModeloDatos.Store.CondicionIvaProveedor">
+      <End Role="CondicionIva" EntitySet="CondicionIvas" />
+      <End Role="Proveedor" EntitySet="Proveedores" />
+    </AssociationSet>
+    <AssociationSet Name="ProveedorCuentaCorrienteProveedor" Association="ModeloDatos.Store.ProveedorCuentaCorrienteProveedor">
+      <End Role="Proveedor" EntitySet="Proveedores" />
+      <End Role="CuentaCorrienteProveedor" EntitySet="CuentaCorrienteProveedores" />
+    </AssociationSet>
+    <AssociationSet Name="ProveedorCompra" Association="ModeloDatos.Store.ProveedorCompra">
+      <End Role="Proveedor" EntitySet="Proveedores" />
+      <End Role="Compra" EntitySet="Comprobantes_Compra" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaListaPrecio" Association="ModeloDatos.Store.EmpresaListaPrecio">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="ListaPrecio" EntitySet="ListaPrecios" />
+    </AssociationSet>
+    <AssociationSet Name="EmpresaArticulo" Association="ModeloDatos.Store.EmpresaArticulo">
+      <End Role="Empresa" EntitySet="Empresas" />
+      <End Role="Articulo" EntitySet="Articulos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_inherits_Persona" Association="ModeloDatos.Store.FK_Empleado_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Empleado" EntitySet="Personas_Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Cliente_inherits_Persona" Association="ModeloDatos.Store.FK_Cliente_inherits_Persona">
+      <End Role="Persona" EntitySet="Personas" />
+      <End Role="Cliente" EntitySet="Personas_Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Salon_inherits_Comprobante" Association="ModeloDatos.Store.FK_Salon_inherits_Comprobante">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="Salon" EntitySet="Comprobantes_Salon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Delivery_inherits_Comprobante" Association="ModeloDatos.Store.FK_Delivery_inherits_Comprobante">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="Delivery" EntitySet="Comprobantes_Delivery" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormaPagoTarjeta_inherits_FormaPago" Association="ModeloDatos.Store.FK_FormaPagoTarjeta_inherits_FormaPago">
+      <End Role="FormaPago" EntitySet="FormaPagos" />
+      <End Role="FormaPagoTarjeta" EntitySet="FormaPagos_FormaPagoTarjeta" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormaPagoCheque_inherits_FormaPago" Association="ModeloDatos.Store.FK_FormaPagoCheque_inherits_FormaPago">
+      <End Role="FormaPago" EntitySet="FormaPagos" />
+      <End Role="FormaPagoCheque" EntitySet="FormaPagos_FormaPagoCheque" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormaPagoCuentaCorriente_inherits_FormaPago" Association="ModeloDatos.Store.FK_FormaPagoCuentaCorriente_inherits_FormaPago">
+      <End Role="FormaPago" EntitySet="FormaPagos" />
+      <End Role="FormaPagoCuentaCorriente" EntitySet="FormaPagos_FormaPagoCuentaCorriente" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Compra_inherits_Comprobante" Association="ModeloDatos.Store.FK_Compra_inherits_Comprobante">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="Compra" EntitySet="Comprobantes_Compra" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Factura_inherits_Comprobante" Association="ModeloDatos.Store.FK_Factura_inherits_Comprobante">
+      <End Role="Comprobante" EntitySet="Comprobantes" />
+      <End Role="Factura" EntitySet="Comprobantes_Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FormaPagoEfectivo_inherits_FormaPago" Association="ModeloDatos.Store.FK_FormaPagoEfectivo_inherits_FormaPago">
+      <End Role="FormaPago" EntitySet="FormaPagos" />
+      <End Role="FormaPagoEfectivo" EntitySet="FormaPagos_FormaPagoEfectivo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Personas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Dni" Type="nvarchar" Nullable="false" MaxLength="8" />
+    <Property Name="Domicilio" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="Telefono" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Celular" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="FechaNacimiento" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpleadoId" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="EstaBloqueado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empresas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CondicionIvaId" Type="bigint" Nullable="false" />
+    <Property Name="RazonSocial" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="NombreFantasia" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Cuit" Type="nvarchar" Nullable="false" MaxLength="13" />
+    <Property Name="Domicilio" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="Telefono" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="Mail" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Sucursal" Type="int" Nullable="false" />
+    <Property Name="Logo" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CondicionIvas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Salas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Mesas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalaId" Type="bigint" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstadoMesa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Perfiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Formularios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="DescripcionCompleta" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comprobantes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="bigint" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="SubTotal" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Descuento" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Total" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="UsuarioId" Type="bigint" Nullable="false" />
+    <Property Name="ClienteId" Type="bigint" Nullable="false" />
+    <Property Name="TipoComprobanteId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DetalleComprobantes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComprobanteId" Type="bigint" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="PrecioUnitario" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="SubTotal" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="ArticuloId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Articulos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CodigoBarra" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+    <Property Name="Abreviatura" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MarcaId" Type="bigint" Nullable="false" />
+    <Property Name="SubRubroId" Type="bigint" Nullable="false" />
+    <Property Name="Foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ActivarLimiteVenta" Type="bit" Nullable="false" />
+    <Property Name="CantidadLimiteVenta" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PermiteStockNegativo" Type="bit" Nullable="false" />
+    <Property Name="EstaDiscontinuado" Type="bit" Nullable="false" />
+    <Property Name="TipoArticulo" Type="int" Nullable="false" />
+    <Property Name="StockMaximo" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="StockMinimo" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="DescuentaStock" Type="bit" Nullable="false" />
+    <Property Name="SePuedeFraccionar" Type="bit" Nullable="false" />
+    <Property Name="Detalle" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cajas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UsuarioAperturaId" Type="bigint" Nullable="false" />
+    <Property Name="UsuarioCierreId" Type="bigint" Nullable="true" />
+    <Property Name="MontoApertura" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="MontoCierre" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="FechaApertura" Type="datetime" Nullable="false" />
+    <Property Name="FechaCierre" Type="datetime" Nullable="true" />
+    <Property Name="MontoSistema" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="Diferencia" Type="decimal" Nullable="true" Precision="18" Scale="2" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoComprobantes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="Letra" Type="nvarchar" Nullable="false" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="DetalleCajas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CajaId" Type="bigint" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TipoPago" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Movimientos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComprobanteId" Type="bigint" Nullable="false" />
+    <Property Name="TipoMovimiento" Type="int" Nullable="false" />
+    <Property Name="CajaId" Type="bigint" Nullable="false" />
+    <Property Name="UsuarioId" Type="bigint" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Configuraciones">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="TipoComprobantePorDefectoId" Type="bigint" Nullable="false" />
+    <Property Name="ListaPrecioPorDefectoId" Type="bigint" Nullable="false" />
+    <Property Name="DepositoPorDefectoId" Type="bigint" Nullable="false" />
+    <Property Name="PuestoDeCajaSeparado" Type="bit" Nullable="false" />
+    <Property Name="SeCobraCubiertos" Type="bit" Nullable="false" />
+    <Property Name="MontoPorCubierto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="GrabarProductoEnTodosDepositos" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Marcas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="bit" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rubros">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SubRubros">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RubroId" Type="bigint" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ingredientes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ArticuloPadreId" Type="bigint" Nullable="false" />
+    <Property Name="ArticuloHijoId" Type="bigint" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="FormaPagos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ComprobanteId" Type="bigint" Nullable="false" />
+    <Property Name="TipoFormaPago" Type="int" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Tarjetas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminada" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlanTarjetas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TarjetaId" Type="bigint" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="Alicuota" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Bancos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Precios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FechaActualizacion" Type="datetime" Nullable="false" />
+    <Property Name="PrecioCosto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PrecioPublico" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Rentabilidad" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="ArticuloId" Type="bigint" Nullable="false" />
+    <Property Name="ListaPrecioId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ListaPrecios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="EstaEliminada" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Depositos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpresaId" Type="bigint" Nullable="false" />
+    <Property Name="Codigo" Type="int" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CuentaCorrientes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClienteId" Type="bigint" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="400" />
+    <Property Name="Monto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TipoMovimiento" Type="int" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Stocks">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DepositoId" Type="bigint" Nullable="false" />
+    <Property Name="ArticuloId" Type="bigint" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="BajasArticulos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StockId" Type="bigint" Nullable="false" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Cantidad" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Observacion" Type="nvarchar" Nullable="false" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RazonSocial" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Domicilio" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CondicionIvaId" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CuentaCorrienteProveedores">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProveedorId" Type="bigint" Nullable="false" />
+    <Property Name="TipoMovimiento" Type="int" Nullable="false" />
+    <Property Name="Monto" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="Fecha" Type="datetime" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" Nullable="false" MaxLength="400" />
+  </EntityType>
+  <EntityType Name="Personas_Empleado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Legajo" Type="int" Nullable="false" />
+    <Property Name="FechaIngreso" Type="datetime" Nullable="false" />
+    <Property Name="Foto" Type="varbinary(max)" Nullable="false" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Personas_Cliente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="MontoMaximoCompra" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="TieneCuentaCorriente" Type="bit" Nullable="false" />
+    <Property Name="EstaBloqueado" Type="bit" Nullable="false" />
+    <Property Name="EstaEliminado" Type="bit" Nullable="false" />
+    <Property Name="Visible" Type="bit" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comprobantes_Salon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Estado" Type="int" Nullable="false" />
+    <Property Name="Comensales" Type="int" Nullable="false" />
+    <Property Name="EmpleadoId" Type="bigint" Nullable="true" />
+    <Property Name="MesaId" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comprobantes_Delivery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Estado" Type="int" Nullable="false" />
+    <Property Name="CostoEnvio" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="EmpleadoId" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormaPagos_FormaPagoTarjeta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="PlanTarjetaId" Type="bigint" Nullable="false" />
+    <Property Name="Cupon" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Numero" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormaPagos_FormaPagoCheque">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BancoId" Type="bigint" Nullable="false" />
+    <Property Name="Numero" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="EnteEmisor" Type="nvarchar" Nullable="false" MaxLength="250" />
+    <Property Name="FechaEmision" Type="datetime" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormaPagos_FormaPagoCuentaCorriente">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ClienteId" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comprobantes_Compra">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ProveedorId" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Comprobantes_Factura">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FormaPagos_FormaPagoEfectivo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EmpleadoEmpresa">
+    <Key>
+      <PropertyRef Name="Empleados_Id" />
+      <PropertyRef Name="Empresas_Id" />
+    </Key>
+    <Property Name="Empleados_Id" Type="bigint" Nullable="false" />
+    <Property Name="Empresas_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UsuarioPerfil">
+    <Key>
+      <PropertyRef Name="Usuarios_Id" />
+      <PropertyRef Name="Perfiles_Id" />
+    </Key>
+    <Property Name="Usuarios_Id" Type="bigint" Nullable="false" />
+    <Property Name="Perfiles_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PerfilFormulario">
+    <Key>
+      <PropertyRef Name="Perfiles_Id" />
+      <PropertyRef Name="Formularios_Id" />
+    </Key>
+    <Property Name="Perfiles_Id" Type="bigint" Nullable="false" />
+    <Property Name="Formularios_Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="EmpleadoUsuario">
+    <End Role="Empleado" Type="ModeloDatos.Store.Personas_Empleado" Multiplicity="1" />
+    <End Role="Usuario" Type="ModeloDatos.Store.Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CondicionIvaEmpresa">
+    <End Role="CondicionIva" Type="ModeloDatos.Store.CondicionIvas" Multiplicity="1" />
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionIva">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empresa">
+        <PropertyRef Name="CondicionIvaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaSala">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Sala" Type="ModeloDatos.Store.Salas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sala">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SalaMesa">
+    <End Role="Sala" Type="ModeloDatos.Store.Salas" Multiplicity="1" />
+    <End Role="Mesa" Type="ModeloDatos.Store.Mesas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sala">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Mesa">
+        <PropertyRef Name="SalaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaPerfil">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Perfil" Type="ModeloDatos.Store.Perfiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Perfil">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaComprobante">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioComprobante">
+    <End Role="Usuario" Type="ModeloDatos.Store.Usuarios" Multiplicity="1" />
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClienteComprobante">
+    <End Role="Cliente" Type="ModeloDatos.Store.Personas_Cliente" Multiplicity="1" />
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoComprobante_Salon">
+    <End Role="Empleado" Type="ModeloDatos.Store.Personas_Empleado" Multiplicity="0..1" />
+    <End Role="Comprobante_Salon" Type="ModeloDatos.Store.Comprobantes_Salon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante_Salon">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MesaComprobante_Salon">
+    <End Role="Mesa" Type="ModeloDatos.Store.Mesas" Multiplicity="1" />
+    <End Role="Comprobante_Salon" Type="ModeloDatos.Store.Comprobantes_Salon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mesa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante_Salon">
+        <PropertyRef Name="MesaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComprobanteDetalleComprobante">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1" />
+    <End Role="DetalleComprobante" Type="ModeloDatos.Store.DetalleComprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleComprobante">
+        <PropertyRef Name="ComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloDetalleComprobante">
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="1" />
+    <End Role="DetalleComprobante" Type="ModeloDatos.Store.DetalleComprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleComprobante">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpleadoDelivery">
+    <End Role="Empleado" Type="ModeloDatos.Store.Personas_Empleado" Multiplicity="1" />
+    <End Role="Delivery" Type="ModeloDatos.Store.Comprobantes_Delivery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Delivery">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioCaja">
+    <End Role="Usuario" Type="ModeloDatos.Store.Usuarios" Multiplicity="1" />
+    <End Role="Caja" Type="ModeloDatos.Store.Cajas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="UsuarioAperturaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioCajaCierre">
+    <End Role="Usuario" Type="ModeloDatos.Store.Usuarios" Multiplicity="0..1" />
+    <End Role="Caja" Type="ModeloDatos.Store.Cajas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="UsuarioCierreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaCaja">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Caja" Type="ModeloDatos.Store.Cajas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Caja">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TipoComprobanteComprobante">
+    <End Role="TipoComprobante" Type="ModeloDatos.Store.TipoComprobantes" Multiplicity="1" />
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoComprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Comprobante">
+        <PropertyRef Name="TipoComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CajaDetalleCaja">
+    <End Role="Caja" Type="ModeloDatos.Store.Cajas" Multiplicity="1" />
+    <End Role="DetalleCaja" Type="ModeloDatos.Store.DetalleCajas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caja">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="DetalleCaja">
+        <PropertyRef Name="CajaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComprobanteMovimiento">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1" />
+    <End Role="Movimiento" Type="ModeloDatos.Store.Movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="ComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CajaMovimiento">
+    <End Role="Caja" Type="ModeloDatos.Store.Cajas" Multiplicity="1" />
+    <End Role="Movimiento" Type="ModeloDatos.Store.Movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caja">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="CajaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UsuarioMovimiento">
+    <End Role="Usuario" Type="ModeloDatos.Store.Usuarios" Multiplicity="1" />
+    <End Role="Movimiento" Type="ModeloDatos.Store.Movimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Movimiento">
+        <PropertyRef Name="UsuarioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaConfiguracion">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Configuracion" Type="ModeloDatos.Store.Configuraciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TipoComprobanteConfiguracion">
+    <End Role="TipoComprobante" Type="ModeloDatos.Store.TipoComprobantes" Multiplicity="1" />
+    <End Role="Configuracion" Type="ModeloDatos.Store.Configuraciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoComprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="TipoComprobantePorDefectoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MarcaArticulo">
+    <End Role="Marca" Type="ModeloDatos.Store.Marcas" Multiplicity="1" />
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Marca">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="MarcaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RubroSubRubro">
+    <End Role="Rubro" Type="ModeloDatos.Store.Rubros" Multiplicity="1" />
+    <End Role="SubRubro" Type="ModeloDatos.Store.SubRubros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rubro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SubRubro">
+        <PropertyRef Name="RubroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SubRubroArticulo">
+    <End Role="SubRubro" Type="ModeloDatos.Store.SubRubros" Multiplicity="1" />
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SubRubro">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="SubRubroId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaTipoComprobante">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="TipoComprobante" Type="ModeloDatos.Store.TipoComprobantes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TipoComprobante">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaRubro">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Rubro" Type="ModeloDatos.Store.Rubros" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Rubro">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaMarca">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Marca" Type="ModeloDatos.Store.Marcas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Marca">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloIngrediente">
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="1" />
+    <End Role="Ingrediente" Type="ModeloDatos.Store.Ingredientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ingrediente">
+        <PropertyRef Name="ArticuloPadreId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloIngrediente1">
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="1" />
+    <End Role="Ingrediente" Type="ModeloDatos.Store.Ingredientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ingrediente">
+        <PropertyRef Name="ArticuloHijoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TarjetaPlanTarjeta">
+    <End Role="Tarjeta" Type="ModeloDatos.Store.Tarjetas" Multiplicity="1" />
+    <End Role="PlanTarjeta" Type="ModeloDatos.Store.PlanTarjetas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tarjeta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PlanTarjeta">
+        <PropertyRef Name="TarjetaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PlanTarjetaFormaPagoTarjeta">
+    <End Role="PlanTarjeta" Type="ModeloDatos.Store.PlanTarjetas" Multiplicity="1" />
+    <End Role="FormaPagoTarjeta" Type="ModeloDatos.Store.FormaPagos_FormaPagoTarjeta" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlanTarjeta">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoTarjeta">
+        <PropertyRef Name="PlanTarjetaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BancoFormaPagoCheque">
+    <End Role="Banco" Type="ModeloDatos.Store.Bancos" Multiplicity="1" />
+    <End Role="FormaPagoCheque" Type="ModeloDatos.Store.FormaPagos_FormaPagoCheque" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Banco">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoCheque">
+        <PropertyRef Name="BancoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ComprobanteFormaPago">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1" />
+    <End Role="FormaPago" Type="ModeloDatos.Store.FormaPagos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPago">
+        <PropertyRef Name="ComprobanteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClienteFormaPagoCuentaCorriente">
+    <End Role="Cliente" Type="ModeloDatos.Store.Personas_Cliente" Multiplicity="1" />
+    <End Role="FormaPagoCuentaCorriente" Type="ModeloDatos.Store.FormaPagos_FormaPagoCuentaCorriente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoCuentaCorriente">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaPrecio">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Precio" Type="ModeloDatos.Store.Precios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloPrecio">
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="1" />
+    <End Role="Precio" Type="ModeloDatos.Store.Precios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ListaPrecioPrecio">
+    <End Role="ListaPrecio" Type="ModeloDatos.Store.ListaPrecios" Multiplicity="1" />
+    <End Role="Precio" Type="ModeloDatos.Store.Precios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListaPrecio">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="ListaPrecioId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaDeposito">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Deposito" Type="ModeloDatos.Store.Depositos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Deposito">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ClienteCuentaCorriente">
+    <End Role="Cliente" Type="ModeloDatos.Store.Personas_Cliente" Multiplicity="1" />
+    <End Role="CuentaCorriente" Type="ModeloDatos.Store.CuentaCorrientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CuentaCorriente">
+        <PropertyRef Name="ClienteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepositoStock">
+    <End Role="Deposito" Type="ModeloDatos.Store.Depositos" Multiplicity="1" />
+    <End Role="Stock" Type="ModeloDatos.Store.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deposito">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="DepositoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ArticuloStock">
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="1" />
+    <End Role="Stock" Type="ModeloDatos.Store.Stocks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Stock">
+        <PropertyRef Name="ArticuloId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="StockBajaArticulo">
+    <End Role="Stock" Type="ModeloDatos.Store.Stocks" Multiplicity="1" />
+    <End Role="BajaArticulo" Type="ModeloDatos.Store.BajasArticulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Stock">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BajaArticulo">
+        <PropertyRef Name="StockId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ListaPrecioConfiguracion">
+    <End Role="ListaPrecio" Type="ModeloDatos.Store.ListaPrecios" Multiplicity="1" />
+    <End Role="Configuracion" Type="ModeloDatos.Store.Configuraciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ListaPrecio">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="ListaPrecioPorDefectoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="DepositoConfiguracion">
+    <End Role="Deposito" Type="ModeloDatos.Store.Depositos" Multiplicity="1" />
+    <End Role="Configuracion" Type="ModeloDatos.Store.Configuraciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deposito">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Configuracion">
+        <PropertyRef Name="DepositoPorDefectoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CondicionIvaProveedor">
+    <End Role="CondicionIva" Type="ModeloDatos.Store.CondicionIvas" Multiplicity="1" />
+    <End Role="Proveedor" Type="ModeloDatos.Store.Proveedores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CondicionIva">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Proveedor">
+        <PropertyRef Name="CondicionIvaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProveedorCuentaCorrienteProveedor">
+    <End Role="Proveedor" Type="ModeloDatos.Store.Proveedores" Multiplicity="1" />
+    <End Role="CuentaCorrienteProveedor" Type="ModeloDatos.Store.CuentaCorrienteProveedores" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CuentaCorrienteProveedor">
+        <PropertyRef Name="ProveedorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProveedorCompra">
+    <End Role="Proveedor" Type="ModeloDatos.Store.Proveedores" Multiplicity="1" />
+    <End Role="Compra" Type="ModeloDatos.Store.Comprobantes_Compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Compra">
+        <PropertyRef Name="ProveedorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaListaPrecio">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="ListaPrecio" Type="ModeloDatos.Store.ListaPrecios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ListaPrecio">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="EmpresaArticulo">
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <End Role="Articulo" Type="ModeloDatos.Store.Articulos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Articulo">
+        <PropertyRef Name="EmpresaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpleadoEmpresa_Empleado">
+    <End Role="Empleado" Type="ModeloDatos.Store.Personas_Empleado" Multiplicity="1" />
+    <End Role="EmpleadoEmpresa" Type="ModeloDatos.Store.EmpleadoEmpresa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EmpleadoEmpresa">
+        <PropertyRef Name="Empleados_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmpleadoEmpresa_Empresa">
+    <End Role="EmpleadoEmpresa" Type="ModeloDatos.Store.EmpleadoEmpresa" Multiplicity="*" />
+    <End Role="Empresa" Type="ModeloDatos.Store.Empresas" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EmpleadoEmpresa">
+        <PropertyRef Name="Empresas_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioPerfil_Usuario">
+    <End Role="Usuario" Type="ModeloDatos.Store.Usuarios" Multiplicity="1" />
+    <End Role="UsuarioPerfil" Type="ModeloDatos.Store.UsuarioPerfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsuarioPerfil">
+        <PropertyRef Name="Usuarios_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsuarioPerfil_Perfil">
+    <End Role="UsuarioPerfil" Type="ModeloDatos.Store.UsuarioPerfil" Multiplicity="*" />
+    <End Role="Perfil" Type="ModeloDatos.Store.Perfiles" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UsuarioPerfil">
+        <PropertyRef Name="Perfiles_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PerfilFormulario_Perfil">
+    <End Role="Perfil" Type="ModeloDatos.Store.Perfiles" Multiplicity="1" />
+    <End Role="PerfilFormulario" Type="ModeloDatos.Store.PerfilFormulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Perfil">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PerfilFormulario">
+        <PropertyRef Name="Perfiles_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PerfilFormulario_Formulario">
+    <End Role="PerfilFormulario" Type="ModeloDatos.Store.PerfilFormulario" Multiplicity="*" />
+    <End Role="Formulario" Type="ModeloDatos.Store.Formularios" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Formulario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PerfilFormulario">
+        <PropertyRef Name="Formularios_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_inherits_Persona">
+    <End Role="Persona" Type="ModeloDatos.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Empleado" Type="ModeloDatos.Store.Personas_Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Cliente_inherits_Persona">
+    <End Role="Persona" Type="ModeloDatos.Store.Personas" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Cliente" Type="ModeloDatos.Store.Personas_Cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Salon_inherits_Comprobante">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Salon" Type="ModeloDatos.Store.Comprobantes_Salon" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Salon">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Delivery_inherits_Comprobante">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Delivery" Type="ModeloDatos.Store.Comprobantes_Delivery" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Delivery">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormaPagoTarjeta_inherits_FormaPago">
+    <End Role="FormaPago" Type="ModeloDatos.Store.FormaPagos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FormaPagoTarjeta" Type="ModeloDatos.Store.FormaPagos_FormaPagoTarjeta" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="FormaPago">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoTarjeta">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormaPagoCheque_inherits_FormaPago">
+    <End Role="FormaPago" Type="ModeloDatos.Store.FormaPagos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FormaPagoCheque" Type="ModeloDatos.Store.FormaPagos_FormaPagoCheque" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="FormaPago">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoCheque">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormaPagoCuentaCorriente_inherits_FormaPago">
+    <End Role="FormaPago" Type="ModeloDatos.Store.FormaPagos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FormaPagoCuentaCorriente" Type="ModeloDatos.Store.FormaPagos_FormaPagoCuentaCorriente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="FormaPago">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoCuentaCorriente">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Compra_inherits_Comprobante">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Compra" Type="ModeloDatos.Store.Comprobantes_Compra" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Compra">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Factura_inherits_Comprobante">
+    <End Role="Comprobante" Type="ModeloDatos.Store.Comprobantes" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Factura" Type="ModeloDatos.Store.Comprobantes_Factura" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Comprobante">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FormaPagoEfectivo_inherits_FormaPago">
+    <End Role="FormaPago" Type="ModeloDatos.Store.FormaPagos" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="FormaPagoEfectivo" Type="ModeloDatos.Store.FormaPagos_FormaPagoEfectivo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="FormaPago">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FormaPagoEfectivo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

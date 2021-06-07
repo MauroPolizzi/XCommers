@@ -1,0 +1,13 @@
+// btnRubro
+// 
+this.btnRubro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+this.btnRubro.Dock = System.Windows.Forms.DockStyle.Top;
+this.btnRubro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+this.btnRubro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+this.btnRubro.ForeColor = System.Drawing.Color.Silver;
+this.btnRubro.Location = new System.Drawing.Point(3, 3);
+this.btnRubro.Name = "btnRubro";
+this.btnRubro.Size = new System.Drawing.Size(170, 45);
+this.btnRubro.TabIndex = 0;
+this.btnRubro.Text = "Bebidas";
+this.btnRubro.UseVisualStyleBackColor = false;

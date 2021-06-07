@@ -1,0 +1,409 @@
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.exe.config
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.exe
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.pdb
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.dll
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.SqlServer.dll
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.xml
+I:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.SqlServer.xml
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAbm.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAsignarUnObjeto.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioBase.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsulta.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConControles.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConDetalle.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00009_QuitarEmpleadoEmpresa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00008_AsignarEmpleadoEmpresa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolEmpleadoLogin.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolFoto.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolGrillaAsignarConBusqueda.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolTipoVista.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00000_Login.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00001_Empleado.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00002_ABM_Empleado.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00003_Usuario.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00004_CondicionDeIva.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00005_ABM_CondicionDeIva.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00006_Empresa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00007_ABM_Empresa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00010_EmpresaParaTrabajar.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00011_Sala.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00012_ABM_Sala.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Principal.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Properties.Resources.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csproj.GenerateResource.Cache
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csproj.CoreCompileInputs.cache
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.exe
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.pdb
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00013_Mesa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00014_ABM_Mesa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolMesa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00015_VentaSalon.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00016_PuntoVentaPorMesa.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csprojResolveAssemblyReference.cache
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolRegistroDelivery.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolVentaArticulo.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.fControlArticulos.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.fListaArticulos.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00017_Delivery.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00018_Formulario.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00019_Perfil.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00020_ABM_Perfil.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00021_AsignarUsuarioPerfil.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00022_QuitarUsuarioPerfil.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00023_AsignarFormularioPerfil.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00024_QuitarFormularioPerfil.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00025_CambiarPassword.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00026_TipoComprobante.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00027_ABM_TipoComprobante.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.FormularioPrimerAcceso.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.SplashScreen.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00028_Marca.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00029_ABM_Marca.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00030_Rubro.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00031_ABM_Rubro.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00033_ABM_SubRubro.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00034_Articulo.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00035_ABM_Articulo.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00036_ConfiguracionSistema.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00037_Deposito.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00038_ABM_Deposito.resources
+I:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00040_ABM_ListaPrecio.resources
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.exe.config
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.exe
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.pdb
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.dll
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.SqlServer.dll
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.xml
+M:\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.SqlServer.xml
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAbm.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAsignarUnObjeto.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioBase.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsulta.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConControles.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConDetalle.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolMesa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolRegistroDelivery.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.fControlArticulos.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.fListaArticulos.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.FormularioPrimerAcceso.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.SplashScreen.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00009_QuitarEmpleadoEmpresa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00008_AsignarEmpleadoEmpresa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolEmpleadoLogin.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolFoto.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolGrillaAsignarConBusqueda.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolTipoVista.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00000_Login.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00001_Empleado.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00002_ABM_Empleado.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00003_Usuario.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00004_CondicionDeIva.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00005_ABM_CondicionDeIva.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00006_Empresa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00007_ABM_Empresa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00010_EmpresaParaTrabajar.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00011_Sala.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00012_ABM_Sala.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00013_Mesa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00014_ABM_Mesa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00015_VentaSalon.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00016_PuntoVentaPorMesa.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00017_Delivery.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00018_Formulario.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00019_Perfil.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00020_ABM_Perfil.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00021_AsignarUsuarioPerfil.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00022_QuitarUsuarioPerfil.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00023_AsignarFormularioPerfil.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00024_QuitarFormularioPerfil.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00025_CambiarPassword.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00026_TipoComprobante.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00027_ABM_TipoComprobante.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00028_Marca.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00029_ABM_Marca.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00030_Rubro.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00031_ABM_Rubro.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00033_ABM_SubRubro.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00034_Articulo.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00035_ABM_Articulo.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00036_ConfiguracionSistema.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00037_Deposito.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00038_ABM_Deposito.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00040_ABM_ListaPrecio.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Principal.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Properties.Resources.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csproj.GenerateResource.Cache
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csproj.CoreCompileInputs.cache
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.exe
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.pdb
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FAbrirMesa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.exe.config
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.exe
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\XCommerce.pdb
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.dll
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.SqlServer.dll
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.xml
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\bin\Debug\EntityFramework.SqlServer.xml
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAbm.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAsignarUnObjeto.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioBase.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsulta.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConControles.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConDetalle.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolMesa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolRegistroDelivery.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FAbrirMesa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FControlArticulos.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FListaArticulos.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.FormularioPrimerAcceso.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.SplashScreen.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00009_QuitarEmpleadoEmpresa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00008_AsignarEmpleadoEmpresa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolEmpleadoLogin.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolFoto.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolGrillaAsignarConBusqueda.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolTipoVista.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00000_Login.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00001_Empleado.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00002_ABM_Empleado.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00003_Usuario.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00004_CondicionDeIva.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00005_ABM_CondicionDeIva.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00006_Empresa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00007_ABM_Empresa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00010_EmpresaParaTrabajar.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00011_Sala.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00012_ABM_Sala.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00013_Mesa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00014_ABM_Mesa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00015_VentaSalon.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00016_PuntoVentaPorMesa.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00017_Delivery.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00018_Formulario.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00019_Perfil.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00020_ABM_Perfil.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00021_AsignarUsuarioPerfil.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00022_QuitarUsuarioPerfil.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00023_AsignarFormularioPerfil.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00024_QuitarFormularioPerfil.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00025_CambiarPassword.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00026_TipoComprobante.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00027_ABM_TipoComprobante.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00028_Marca.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00029_ABM_Marca.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00030_Rubro.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00031_ABM_Rubro.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00033_ABM_SubRubro.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00034_Articulo.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00035_ABM_Articulo.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00036_ConfiguracionSistema.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00037_Deposito.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00038_ABM_Deposito.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core._00040_ABM_ListaPrecio.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Principal.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Properties.Resources.resources
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csproj.GenerateResource.Cache
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csproj.CoreCompileInputs.cache
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.exe
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.pdb
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csprojResolveAssemblyReference.cache
+F:\Personal CAD\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolArticulo.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolArticulo.resources
+M:\Codigo Fuente\XCommerce\XCommerce\obj\Debug\XCommerce.csprojResolveAssemblyReference.cache
+C:\Users\augusto\Documents\XCommerce\XCommerce\bin\Debug\XCommerce.exe.config
+C:\Users\augusto\Documents\XCommerce\XCommerce\obj\Debug\XCommerce.exe
+C:\Users\augusto\Documents\XCommerce\XCommerce\obj\Debug\XCommerce.pdb
+C:\Users\augusto\Documents\XCommerce vale\XCommerce\bin\Debug\XCommerce.exe.config
+C:\Users\augusto\Documents\XCommerce vale\XCommerce\obj\Debug\XCommerce.exe
+C:\Users\augusto\Documents\XCommerce vale\XCommerce\obj\Debug\XCommerce.pdb
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\XCommerce.exe.config
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\XCommerce.exe
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\XCommerce.pdb
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\EntityFramework.dll
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\EntityFramework.xml
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAbm.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAsignarUnObjeto.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioBase.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsulta.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConControles.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConDetalle.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolArticulo.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolMesa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolRegistroDelivery.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FAbrirMesa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FControlArticulos.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FListaArticulos.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.FormularioPrimerAcceso.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.SplashScreen.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00009_QuitarEmpleadoEmpresa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00008_AsignarEmpleadoEmpresa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolEmpleadoLogin.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolFoto.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolGrillaAsignarConBusqueda.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolTipoVista.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00000_Login.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00001_Empleado.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00002_ABM_Empleado.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00003_Usuario.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00004_CondicionDeIva.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00005_ABM_CondicionDeIva.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00006_Empresa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00007_ABM_Empresa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00010_EmpresaParaTrabajar.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00011_Sala.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00012_ABM_Sala.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00013_Mesa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00014_ABM_Mesa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00015_VentaSalon.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00016_PuntoVentaPorMesa.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00017_Delivery.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00018_Formulario.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00019_Perfil.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00020_ABM_Perfil.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00021_AsignarUsuarioPerfil.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00022_QuitarUsuarioPerfil.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00023_AsignarFormularioPerfil.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00024_QuitarFormularioPerfil.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00025_CambiarPassword.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00026_TipoComprobante.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00027_ABM_TipoComprobante.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00028_Marca.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00029_ABM_Marca.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00030_Rubro.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00031_ABM_Rubro.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00033_ABM_SubRubro.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00034_Articulo.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00035_ABM_Articulo.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00036_ConfiguracionSistema.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00037_Deposito.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00038_ABM_Deposito.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00040_ABM_ListaPrecio.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Principal.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Properties.Resources.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.csproj.GenerateResource.Cache
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.exe
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.pdb
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.csprojResolveAssemblyReference.cache
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00032_SubRubro.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00042_ABM_Cliente.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00043_AgregarStock.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00041_Cliente.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00044_Deposito_Detalle.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00045_Kiosco.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00047_ABM_Precio.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00039_ListaPrecio.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00048_CuentaCorriente.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00049_Pagar_CtaCte.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00050_ConsultaFacturas.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00052_AMB_Proveedor.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00051_Proveedor.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00053_Tarjeta.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00054_ABM_Tarjeta.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00055_PlanTarjeta.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00056_ABM_PlanTarjeta.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00057_Banco.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00058_ABM_Banco.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00059_AbrirCaja.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00060_CerrarCaja.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00061_ConsultarCaja.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00062_Movimientos.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00063_Comprobantes.resources
+C:\Users\augusto\Documents\Loboratorio\2do Cuatrimestre\Final2-Laboratorio\XCommerce\obj\Debug\XCommerce.Core._00064_FormaPagoCtaCte.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\XCommerce.exe.config
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\XCommerce.exe
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\XCommerce.pdb
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\EntityFramework.dll
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\EntityFramework.xml
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAbm.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioAsignarUnObjeto.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioBase.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsulta.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConControles.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Base.Formularios.FormularioConsultaConDetalle.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolArticulo.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolMesa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolRegistroDelivery.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FAbrirMesa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FControlArticulos.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.FormulariosVarios.FListaArticulos.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.FormularioPrimerAcceso.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.PrimerAcceso.SplashScreen.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00009_QuitarEmpleadoEmpresa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00008_AsignarEmpleadoEmpresa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolEmpleadoLogin.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolFoto.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolGrillaAsignarConBusqueda.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core.Controles.ctrolTipoVista.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00000_Login.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00001_Empleado.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00002_ABM_Empleado.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00003_Usuario.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00004_CondicionDeIva.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00005_ABM_CondicionDeIva.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00006_Empresa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00007_ABM_Empresa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00010_EmpresaParaTrabajar.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00011_Sala.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00012_ABM_Sala.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00013_Mesa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00014_ABM_Mesa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00015_VentaSalon.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00016_PuntoVentaPorMesa.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00017_Delivery.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00018_Formulario.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00019_Perfil.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00020_ABM_Perfil.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00021_AsignarUsuarioPerfil.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00022_QuitarUsuarioPerfil.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00023_AsignarFormularioPerfil.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00024_QuitarFormularioPerfil.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00025_CambiarPassword.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00026_TipoComprobante.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00027_ABM_TipoComprobante.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00028_Marca.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00029_ABM_Marca.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00030_Rubro.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00031_ABM_Rubro.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00032_SubRubro.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00033_ABM_SubRubro.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00034_Articulo.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00035_ABM_Articulo.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00036_ConfiguracionSistema.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00037_Deposito.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00038_ABM_Deposito.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00039_ListaPrecio.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00040_ABM_ListaPrecio.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00041_Cliente.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00042_ABM_Cliente.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00043_AgregarStock.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00044_Deposito_Detalle.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00045_Kiosco.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00047_ABM_Precio.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00048_CuentaCorriente.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00049_Pagar_CtaCte.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00050_ConsultaFacturas.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00051_Proveedor.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00052_AMB_Proveedor.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00053_Tarjeta.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00054_ABM_Tarjeta.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00055_PlanTarjeta.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00056_ABM_PlanTarjeta.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00057_Banco.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00058_ABM_Banco.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00059_AbrirCaja.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00060_CerrarCaja.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00061_ConsultarCaja.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00062_Movimientos.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00063_Comprobantes.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Core._00064_FormaPagoCtaCte.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Principal.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.Properties.Resources.resources
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.csproj.GenerateResource.Cache
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.exe
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.pdb
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.csprojAssemblyReference.cache
+C:\Users\Mauro Polizzi\Desktop\UTN\2do CUATRIMESTRE\LABORATORIO II\Final2-Laboratorio - Efectivo - CteCte\XCommerce\obj\Debug\XCommerce.csproj.CopyComplete
